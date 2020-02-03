@@ -293,13 +293,3 @@ entries:
         - title: Troubleshooting pages
           url: /tag_troubleshooting.html
           output: web
-
-  - title: Spring
-    output: web, pdf
-
-    folderitems:
-
-    - title: Spring one
-      url: /mydoc_springone.html
-      output: web, pdf
-

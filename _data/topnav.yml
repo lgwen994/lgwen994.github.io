@@ -4,8 +4,8 @@ topnav:
 - title: Topnav
   items:
     - title: GitHub
-      external_url: https://github.com/tomjoht/documentation-theme-jekyll
-    - title: News
+      external_url: https://github.com/lgwen994/lgwen994.github.io
+    - title: Blogs
       url: /news
 
 #Topnav dropdowns
@@ -30,3 +30,5 @@ topnav_dropdowns:
           url: /p1_landing_page.html
         - title: Product 2
           url: /p2_landing_page.html
+        - title: Docker
+          url: /docker_landing_page.html

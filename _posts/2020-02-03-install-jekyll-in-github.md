@@ -3,7 +3,7 @@ title:  "Install jekyll in github"
 published: true
 permalink: installjekyllingithub.html
 summary: "building own blog in github by jekyll."
-tags: [news]
+tags: [jekyll, git]
 ---
 
 ## First : creating a new repository 
@@ -67,4 +67,4 @@ jekyll serve
 If run the server is not successful, copy the Gemfile and Gemfile.lock from testblog folder to documentation-theme-jekyll-gh-pages folder and replace them.
 
 ## Third : uploading Jekyll blog to github
-I used the VSCode to connect github. The details is shown in [Usage guide for github with VSCode](#).
+I used the VSCode to connect github. The details is shown in [Usage for github with VSCode](usage_for_github_with_vscode).

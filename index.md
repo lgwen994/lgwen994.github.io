@@ -1,6 +1,5 @@
 ---
 title: Blog
-sidebar: home_sidebar
 permalink: index.html
 summary: All of the technical skills I use and learn.
 ---

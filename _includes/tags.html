@@ -18,6 +18,9 @@
     {% for post in site.tags[tag_name] %}
     <article class="archive-item">
       <h4><a href="{{ root_url }}{{ post.url }}">{{post.title}}</a></h4>
+        {% if post.summary %}
+        <div class="summary">{{post.summary}}</div>
+        {% endif %}
     </article>
     {% endfor %}
   </div>

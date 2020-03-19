@@ -13,27 +13,20 @@ layout: default
             {% endif %}
             {% endfor %}
             {% endif %}
-
         </p>
-
-
     </header>
-
+  {% include post-tags.html %}
     <div class="post-content" itemprop="articleBody">
-
         {% if page.summary %}
         <div class="summary">{{page.summary}}</div>
         {% endif %}
-
         {{ content }}
     </div>
-
-
-
+  <div class="date">
+    Written on {{ page.date | date: "%B %e, %Y" }}
+  </div>
 </article>
 
 {% include commento.html %}
-
 {{site.data.alerts.hr_shaded}}
-
 {% include footer.html %}

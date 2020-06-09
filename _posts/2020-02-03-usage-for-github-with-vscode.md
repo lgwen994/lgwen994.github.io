@@ -36,7 +36,6 @@ Open the file '\documentation-theme-jekyll-gh-pages\.git\config' and add the fol
 4. click the 'pull' button
 5. click the 'push' button
 {% include image.html file="vscode_git_operation.png" alt="vscode_git_operation" caption="operate git" %}
-{% include image.html file="liningup.png" caption="Lining up the left edge ensures the list stays in tact." %}
 - Troubleshooting
 
 If there is the error message "fatal: refusing to merge unrelated histories" when git pull, using the command as below.

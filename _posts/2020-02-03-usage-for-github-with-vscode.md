@@ -11,11 +11,11 @@ In your own github, create a new repository and the name is {username}.github.io
 
 ## Second : using VSCode
 - Open the folder of programs, for example 'documentation-theme-jekyll-gh-pages'
-{% include image.html file="vscode_openfolder.png" url="#" alt="vscode_openfolder" caption="open folder in VSCode" %}
+{% include image.html file="vscode_openfolder.png" alt="vscode_openfolder" caption="open folder in VSCode" %}
 
 - Init the git for this folder
 Choose View -> Command Palette -> Git: Initialize Repository
-{% include image.html file="vscode_git_init.png" url="#" alt="vscode_git_init" caption="init git for this folder" %}
+{% include image.html file="vscode_git_init.png" alt="vscode_git_init" caption="init git for this folder" %}
 The '.git' folder is created. 
 - setting the config
 Open the file '\documentation-theme-jekyll-gh-pages\.git\config' and add the followed scripts.
@@ -35,8 +35,8 @@ Open the file '\documentation-theme-jekyll-gh-pages\.git\config' and add the fol
 3. click the 'right mark' to commit
 4. click the 'pull' button
 5. click the 'push' button
-{% include image.html file="vscode_git_operation.png" url="#" alt="vscode_git_operation" caption="operate git" %}
-
+{% include image.html file="vscode_git_operation.png" alt="vscode_git_operation" caption="operate git" %}
+{% include image.html file="liningup.png" caption="Lining up the left edge ensures the list stays in tact." %}
 - Troubleshooting
 
 If there is the error message "fatal: refusing to merge unrelated histories" when git pull, using the command as below.

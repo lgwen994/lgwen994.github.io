@@ -1,0 +1,712 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><!-- icons --><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" sizes="48x48" href="/favicon.ico"><!-- Other meta important things --><meta name="generator" content="Astro v4.5.8"><meta name="description" content="YOUR META DESCRIPTION FOR SEO"><meta name="color-scheme" content="light only"><meta name="keywords" content="astro.build, astro, static site, react, webiste templates, website creation, react templates, next.js templates, astro templates, custom website, custom website templates"><meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><!-- default ones --><meta property="url" content="https://agency-aestro-astro.netlify.app"><meta property="type" content="website"><meta property="title" content="Agency Aestro | Offers"><meta property="description" content="YOUR META DESCRIPTION FOR SEO"><meta property="image" content="/_astro/preview.DQNpCrLA.webp"><!-- open graph ones --><meta property="og:url" content="https://agency-aestro-astro.netlify.app"><meta property="og:type" content="website"><meta property="og:title" content="Agency Aestro | Offers"><meta property="og:description" content="YOUR META DESCRIPTION FOR SEO"><meta property="og:image" content="/_astro/preview.DQNpCrLA.webp"><!-- twitter ones --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Agency Aestro | Offers"><meta name="twitter:description" content="YOUR META DESCRIPTION FOR SEO"><meta name="twitter:image" content="/_astro/preview.DQNpCrLA.webp"><meta property="twitter:domain" content="https://agency-aestro-astro.netlify.app"><meta property="twitter:url" content="https://agency-aestro-astro.netlify.app"><title>Agency Aestro | Offers</title><style data-emotion="css-global rco1io">@font-face{font-family:"Roboto";font-style:normal;font-weight:100;src:url(/_astro/Roboto-Thin.Df4ydPom.woff2) format("woff2");font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:"Roboto";font-style:normal;font-weight:300;src:url(/_astro/Roboto-Light.-TzFADkf.woff2) format("woff2");font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:"Roboto";font-style:normal;font-weight:400;src:url(/_astro/Roboto-Regular.CjbfJjO0.woff2) format("woff2");font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:"Roboto";font-style:normal;font-weight:500;src:url(/_astro/Roboto-Medium.DRylU_ql.woff2) format("woff2");font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:"Roboto";font-style:normal;font-weight:700;src:url(/_astro/Roboto-Bold.OBUL28o9.woff2) format("woff2");font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:"Roboto";font-style:normal;font-weight:900;src:url(/_astro/Roboto-Black.tBYbbWl-.woff2) format("woff2");font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:"Roboto";font-style:italic;font-weight:100;src:url(/_astro/Roboto-ThinItalic.CI9JpB2v.woff2) format("woff2");font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:"Roboto";font-style:italic;font-weight:300;src:url(/_astro/Roboto-LightItalic.DuFP9W7P.woff2) format("woff2");font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:"Roboto";font-style:italic;font-weight:400;src:url(/_astro/Roboto-Italic.0KLjOP-5.woff2) format("woff2");font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:"Roboto";font-style:italic;font-weight:500;src:url(/_astro/Roboto-MediumItalic.CPqftbAj.woff2) format("woff2");font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:"Roboto";font-style:italic;font-weight:700;src:url(/_astro/Roboto-BoldItalic.Bbs8lVH2.woff2) format("woff2");font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:"Roboto";font-style:italic;font-weight:900;src:url(/_astro/Roboto-BlackItalic.CxCOE_MU.woff2) format("woff2");font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}:root{--primary:#FFFFFF;--secondary:#20222e;--tertiary:#5267ee;--bg-element:#FFFFFF;--text-default:#101118;--text-secondary:#2f3561;}:root{-webkit-print-color-scheme:light only;color-scheme:light only;}body,html{font-family:"Roboto",sans-serif;font-weight:400;font-size:16px;line-height:1.5;}*{box-sizing:border-box;}html{line-height:1.15;-webkit-text-size-adjust:100%;}body{margin:0;color:var(--text-default);background:var(--primary);}main{display:block;}a{background-color:transparent;}abbr[title]{border-bottom:none;-webkit-text-decoration:underline;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted;}img{border-style:none;object-fit:cover;}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0;}button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0;}button{padding:0;}figure{margin:0;line-height:0;}strong{font-weight:700;}a{-webkit-text-decoration:none;text-decoration:none;color:inherit;}h1,h2,h3,h4,h5,h6{margin:0 0 30px;}h1:last-child,h2:last-child,h3:last-child,h4:last-child,h5:last-child,h6:last-child{margin:0;}h1{font-size:50px;line-height:1.2;}@media (max-width: 992px){h1{font-size:40px;}}h2{font-size:45px;line-height:1.2;}@media (max-width: 992px){h2{font-size:35px;}}h3{font-size:35px;line-height:1.2;}@media (max-width: 992px){h3{font-size:30px;}}h4{font-size:25px;line-height:1.2;}@media (max-width: 992px){h4{font-size:25px;}}h5{font-size:20px;line-height:1.2;}@media (max-width: 992px){h5{font-size:20px;}}h6{font-size:18px;line-height:1.2;}@media (max-width: 992px){h6{font-size:15px;}}p{margin:0 0 10px;font-size:16px;line-height:25px;letter-spacing:1px;color:var(--text-secondary);}p:last-child{margin:0;}b{color:var(--tertiary);}</style></head> <body> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();;(()=>{var v=Object.defineProperty;var A=(c,s,a)=>s in c?v(c,s,{enumerable:!0,configurable:!0,writable:!0,value:a}):c[s]=a;var d=(c,s,a)=>(A(c,typeof s!="symbol"?s+"":s,a),a);var u;{let c={0:t=>m(t),1:t=>a(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(a(t)),5:t=>new Set(a(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t)},s=t=>{let[e,n]=t;return e in c?c[e](n):void 0},a=t=>t.map(s),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([e,n])=>[e,s(n)]));customElements.get("astro-island")||customElements.define("astro-island",(u=class extends HTMLElement{constructor(){super(...arguments);d(this,"Component");d(this,"hydrator");d(this,"hydrate",async()=>{var f;if(!this.hydrator||!this.isConnected)return;let e=(f=this.parentElement)==null?void 0:f.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let n=this.querySelectorAll("astro-slot"),r={},l=this.querySelectorAll("template[data-astro-template]");for(let o of l){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(r[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of n){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(r[o.getAttribute("name")||"default"]=o.innerHTML)}let h;try{h=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(o){let i=this.getAttribute("component-url")||"<unknown>",b=this.getAttribute("component-export");throw b&&(i+=` (export ${b})`),console.error(`[hydrate] Error parsing props for component ${i}`,this.getAttribute("props"),o),o}let p;await this.hydrator(this)(this.Component,h,r,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});d(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),n.disconnect(),this.childrenConnectedCallback()},n=new MutationObserver(()=>{var r;((r=this.lastChild)==null?void 0:r.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});n.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}async start(){let e=JSON.parse(this.getAttribute("opts")),n=this.getAttribute("client");if(Astro[n]===void 0){window.addEventListener(`astro:${n}`,()=>this.start(),{once:!0});return}try{await Astro[n](async()=>{let r=this.getAttribute("renderer-url"),[l,{default:h}]=await Promise.all([import(this.getAttribute("component-url")),r?import(r):()=>()=>{}]),p=this.getAttribute("component-export")||"default";if(!p.includes("."))this.Component=l[p];else{this.Component=l;for(let y of p.split("."))this.Component=this.Component[y]}return this.hydrator=h,this.hydrate},e,this)}catch(r){console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`,r)}}attributeChangedCallback(){this.hydrate()}},d(u,"observedAttributes",["props"]),u))}})();</script><astro-island uid="v5A5N" prefix="r10" component-url="/_astro/Header.DrwXFxBF.js" component-export="Header" renderer-url="/_astro/client.DhkhUWYr.js" props="{}" ssr="" client="load" opts="{&quot;name&quot;:&quot;Header&quot;,&quot;value&quot;:true}" await-children=""><style data-emotion="css 15f2kzd animation-1m9ag6">.css-15f2kzd{width:100%;background:var(--bg-element);padding:20px 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:40px;position:-webkit-sticky;position:sticky;top:0;left:0;z-index:10;box-shadow:0 0 10px rgb(123 123 123 / 10%);-webkit-animation:animation-1m9ag6 1s;animation:animation-1m9ag6 1s;}@-webkit-keyframes animation-1m9ag6{from{-webkit-transform:translateY(-50px);-moz-transform:translateY(-50px);-ms-transform:translateY(-50px);transform:translateY(-50px);opacity:0.01;}to{-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);opacity:1;}}@keyframes animation-1m9ag6{from{-webkit-transform:translateY(-50px);-moz-transform:translateY(-50px);-ms-transform:translateY(-50px);transform:translateY(-50px);opacity:0.01;}to{-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);opacity:1;}}</style><header class="css-15f2kzd"><style data-emotion="css 30xdb5">.css-30xdb5{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:40px;}</style><style data-emotion="css 4x5y25">.css-4x5y25{margin:0 auto;padding:0 20px;width:100%;max-width:540px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:40px;}@media (min-width: 768px) and (max-width: 992px){.css-4x5y25{max-width:720px;}}@media (min-width: 992px) and (max-width: 1200px){.css-4x5y25{max-width:960px;}}@media (min-width: 1200px) and (max-width: 1440px){.css-4x5y25{max-width:1140px;}}@media (min-width: 1440px){.css-4x5y25{max-width:1320px;}}</style><div class="css-4x5y25"><style data-emotion="css pxexir">.css-pxexir{position:relative;z-index:3;}.css-pxexir a{font-size:35px;line-height:30px;font-weight:700;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;position:relative;}.css-pxexir a span:after{content:"";position:absolute;bottom:-5px;left:0;width:25%;height:3px;background-color:var(--primary);z-index:1;-webkit-transition:width 0.2s linear;transition:width 0.2s linear;}.css-pxexir a:hover span:after{width:100%;}.css-pxexir a img{height:63px;width:150px;object-fit:contain;}</style><div class="css-pxexir"><a href="/"><img src="/_astro/logo.CIy3CyIk.webp" alt="logo" width="1500" height="643"/></a></div><style data-emotion="css 1eptzd3">.css-1eptzd3{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;gap:50px;}@media (max-width: 1200px){.css-1eptzd3{gap:20px;}}</style><div class="css-1eptzd3"><style data-emotion="css ogflhn">.css-ogflhn{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;}@media (max-width: 992px){.css-ogflhn{position:fixed;top:0;right:-100%;background:var(--bg-element);height:100vh;z-index:2;-webkit-transform:translateX(100%);-moz-transform:translateX(100%);-ms-transform:translateX(100%);transform:translateX(100%);-webkit-transition:-webkit-transform 0.3s linear,right 0.7s;transition:transform 0.3s linear,right 0.7s;padding-top:85px;width:clamp(300px, 80%, 300px);}}</style><nav class="css-ogflhn"><style data-emotion="css 1tc45qu">.css-1tc45qu{padding:0;margin:0;list-style-type:none;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}@media (min-width: 992px){.css-1tc45qu{gap:20px;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;}}@media (max-width: 992px){.css-1tc45qu{gap:10px;padding:20px 10px 53px;overflow:auto;width:100%;height:100%;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:start;-ms-flex-pack:start;-webkit-justify-content:flex-start;justify-content:flex-start;-webkit-align-items:flex-start;-webkit-box-align:flex-start;-ms-flex-align:flex-start;align-items:flex-start;}}.css-1tc45qu >li a{-webkit-text-decoration:none;text-decoration:none;color:var(--text-default);display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;font-size:16px;line-height:18px;padding:10px;border-radius:5px;background-color:transparent;cursor:pointer;-webkit-transition:background-color 0.2s linear;transition:background-color 0.2s linear;}@media (max-width: 992px){.css-1tc45qu >li a{padding:10px 20px;}}.css-1tc45qu >li a:hover{background-color:var(--tertiary);color:var(--primary);}.css-1tc45qu >li a.active:not(:hover){background-color:var(--tertiary);color:var(--primary);}.css-1tc45qu >li a img{margin:0 15px 0 0;max-width:30px;max-height:30px;}@media (max-width: 1200px){.css-1tc45qu >li a img{margin:0 10px 0 0;}}</style><ul class="css-1tc45qu"><li><a href="/" class="">Home</a></li><li><a href="/about" class="">About Me</a></li><li><a href="/offers" class="">Our offers</a></li><li><a href="/privacy" class="">Privacy Policy</a></li><li><a href="/contact" class="">Contact</a></li></ul></nav><style data-emotion="css k8slza">.css-k8slza{position:relative;z-index:3;border:1px solid var(--tertiary);border-radius:50%;background:var(--bg-element);cursor:pointer;-webkit-transition:background 0.3s,border-color 0.3s,color 0.3s;transition:background 0.3s,border-color 0.3s,color 0.3s;width:45px;height:45px;}@media (min-width: 992px){.css-k8slza{display:none;}}</style><button aria-label="Menu" aria-expanded="false" role="button" tabindex="0" class="css-k8slza"><style data-emotion="css 2p2a0b">.css-2p2a0b{background:var(--tertiary);position:absolute;left:50%;display:block;-webkit-transform:translate(-50%, -50%);-moz-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);transform:translate(-50%, -50%);-webkit-transition:-webkit-transform 0.3s,background 0.3s,top 0.3s;transition:transform 0.3s,background 0.3s,top 0.3s;pointer-events:none;width:50%;height:3px;top:calc(50% - 4px);}@media (max-width: 992px){.css-2p2a0b{height:2px;}}.css-2p2a0b:not(:first-of-type){top:calc(50% + 4px);}</style><span class="css-2p2a0b"></span><span class="css-2p2a0b"></span></button></div></div></header><!--astro:end--></astro-island>  <main class="page-content"> <astro-island uid="1yJg96" prefix="r16" component-url="/_astro/Hero.B3AS900g.js" component-export="Hero" renderer-url="/_astro/client.DhkhUWYr.js" props="{&quot;heroType&quot;:[0,&quot;center&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;Hero&quot;,&quot;value&quot;:true}" await-children=""><style data-emotion="css jzb1xf">.css-jzb1xf{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;padding:90px 0 50px;text-align:center;}</style><section class="css-jzb1xf"><style data-emotion="css j2kw9x">.css-j2kw9x{margin:0 auto;padding:0 20px;width:100%;max-width:540px;}@media (min-width: 768px) and (max-width: 992px){.css-j2kw9x{max-width:720px;}}@media (min-width: 992px) and (max-width: 1200px){.css-j2kw9x{max-width:960px;}}@media (min-width: 1200px) and (max-width: 1440px){.css-j2kw9x{max-width:1140px;}}@media (min-width: 1440px){.css-j2kw9x{max-width:1320px;}}</style><div class="css-j2kw9x"><style data-emotion="css yhnt2v">.css-yhnt2v{width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;max-width:650px;margin:0 auto;position:relative;}.css-yhnt2v::before{content:"";position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%, -50%);-moz-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);transform:translate(-50%, -50%);width:80%;height:80%;background:linear-gradient(
+            0deg,
+            transparent 0%,
+            var(--tertiary) 100%
+        );-webkit-filter:blur(100px);filter:blur(100px);opacity:0.3;z-index:-1;}.css-yhnt2v .icon-wrapper{margin-top:50px;}</style><div class="css-yhnt2v"><astro-slot> <astro-island uid="ZlFQkT" prefix="r12" component-url="/_astro/FadeIn.Smuve1Dq.js" component-export="FadeIn" renderer-url="/_astro/client.DhkhUWYr.js" props="{&quot;delay&quot;:[0,0.2]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;FadeIn&quot;,&quot;value&quot;:true}" await-children=""><style data-emotion="css 1fvj7ms">.css-1fvj7ms{opacity:0.001;-webkit-transform:translateY(20px);-moz-transform:translateY(20px);-ms-transform:translateY(20px);transform:translateY(20px);-webkit-transition:opacity 0.5s,-webkit-transform 0.5s;transition:opacity 0.5s,transform 0.5s;}.css-1fvj7ms.visible{opacity:1;-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);}</style><div class="css-1fvj7ms"><astro-slot> <h1>What we offer?</h1> <p></p> </astro-slot></div><!--astro:end--></astro-island> <astro-island uid="Z1LNcIp" prefix="r15" component-url="/_astro/FadeIn.Smuve1Dq.js" component-export="FadeIn" renderer-url="/_astro/client.DhkhUWYr.js" props="{&quot;delay&quot;:[0,0.3]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;FadeIn&quot;,&quot;value&quot;:true}" await-children=""><style data-emotion="css 1fvj7ms">.css-1fvj7ms{opacity:0.001;-webkit-transform:translateY(20px);-moz-transform:translateY(20px);-ms-transform:translateY(20px);transform:translateY(20px);-webkit-transition:opacity 0.5s,-webkit-transform 0.5s;transition:opacity 0.5s,transform 0.5s;}.css-1fvj7ms.visible{opacity:1;-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);}</style><div class="css-1fvj7ms"><astro-slot> <style data-emotion="css lj8v60">.css-lj8v60{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-ms-flex-pack:start;-webkit-justify-content:flex-start;justify-content:flex-start;margin-top:20px;}</style><div class="css-lj8v60"><style data-emotion="css 19siiih">.css-19siiih{text-transform:uppercase;-webkit-transition:0.3s;transition:0.3s;cursor:pointer;-webkit-text-decoration:none;text-decoration:none;display:inline-block;text-align:center;padding:12px 40px;min-width:150px;border:1.5px solid var(--tertiary);font-size:16px;line-height:20px;letter-spacing:1px;font-weight:500;border-radius:50px;background:var(--tertiary);color:var(--primary);}.css-19siiih:hover{background:transparent;color:var(--tertiary);}</style><a href="/contact" class="css-19siiih">
+Contact us
+</a></div> </astro-slot></div><!--astro:end--></astro-island> <astro-island uid="2tsVeS" prefix="r14" component-url="/_astro/FadeIn.Smuve1Dq.js" component-export="FadeIn" renderer-url="/_astro/client.DhkhUWYr.js" props="{&quot;delay&quot;:[0,0.4]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;FadeIn&quot;,&quot;value&quot;:true}" await-children=""><style data-emotion="css 1fvj7ms">.css-1fvj7ms{opacity:0.001;-webkit-transform:translateY(20px);-moz-transform:translateY(20px);-ms-transform:translateY(20px);transform:translateY(20px);-webkit-transition:opacity 0.5s,-webkit-transform 0.5s;transition:opacity 0.5s,transform 0.5s;}.css-1fvj7ms.visible{opacity:1;-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);}</style><div class="css-1fvj7ms"><astro-slot> <div class="icon-wrapper"> <img src="/_astro/icon-arrow-down.C0vMD__j.svg" alt="arrow down icon" width="50" height="50" data-icon="true"/> </div> </astro-slot></div><!--astro:end--></astro-island> </astro-slot></div></div></section><!--astro:end--></astro-island> <!-- <LogosSlider client:load /> --> <astro-island uid="UYVFD" prefix="r1" component-url="/_astro/Hero.B3AS900g.js" component-export="Hero" renderer-url="/_astro/client.DhkhUWYr.js" props="{&quot;heroType&quot;:[0,&quot;textImage&quot;],&quot;content&quot;:[0,{&quot;title&quot;:[0,&quot;&lt;span id=\&quot;firsthome\&quot;&gt;✅First Home Buyers&lt;/span&gt;&quot;],&quot;paragraph&quot;:[0,&quot;\n                &lt;div class=\&quot;service-section first-home-buyers compact\&quot;&gt;\n                    &lt;h5 class=\&quot;service-title\&quot;&gt;Buying your first home? Let me make it easy for you.&lt;/h5&gt;\n                    \n                    &lt;p class=\&quot;service-intro\&quot;&gt;I know buying your first home can feel overwhelming. Dealing with agents, lawyers, valuers, banks, and insurance companies is a lot — but you don&#39;t have to do it alone.&lt;/p&gt;\n                    \n                    &lt;div class=\&quot;benefits-block\&quot;&gt;\n                        &lt;h5 class=\&quot;section-heading\&quot;&gt;Here&#39;s how I can help:&lt;/h5&gt;\n                        &lt;ul class=\&quot;benefits-list\&quot;&gt;\n                            &lt;li class=\&quot;benefit-item\&quot;&gt;\n                                &lt;span class=\&quot;check-icon\&quot;&gt;✅&lt;/span&gt; I&#39;ll arrange pre-approval, so you know exactly how much you can spend.\n                            &lt;/li&gt;\n                            &lt;li class=\&quot;benefit-item\&quot;&gt;\n                                &lt;span class=\&quot;check-icon\&quot;&gt;✅&lt;/span&gt; I&#39;ll support you from offer to settlement — every step of the way.\n                            &lt;/li&gt;\n                            &lt;li class=\&quot;benefit-item\&quot;&gt;\n                                &lt;span class=\&quot;check-icon\&quot;&gt;✅&lt;/span&gt; I&#39;ll help you choose the right lender and loan structure.\n                            &lt;/li&gt;\n                            &lt;li class=\&quot;benefit-item\&quot;&gt;\n                                &lt;span class=\&quot;check-icon\&quot;&gt;✅&lt;/span&gt; I&#39;ll negotiate a great interest rate and cash contribution for you.\n                            &lt;/li&gt;\n                            &lt;li class=\&quot;benefit-item\&quot;&gt;\n                                &lt;span class=\&quot;check-icon\&quot;&gt;✅&lt;/span&gt; And best of all — my service is free when you take a loan with a main bank!\n                            &lt;/li&gt;\n                        &lt;/ul&gt;\n                    &lt;/div&gt;\n                    \n                    &lt;div class=\&quot;concerns-block\&quot;&gt;\n                        &lt;h5 class=\&quot;section-heading\&quot;&gt;Worried about something?&lt;/h5&gt;\n                        &lt;ul class=\&quot;concerns-list\&quot;&gt;\n                            &lt;li class=\&quot;concern-item\&quot;&gt;Not sure if you have enough deposit?&lt;/li&gt;\n                            &lt;li class=\&quot;concern-item\&quot;&gt;Concerned about income or credit history?&lt;/li&gt;\n                            &lt;li class=\&quot;concern-item\&quot;&gt;Not a NZ resident yet?&lt;/li&gt;\n                        &lt;/ul&gt;\n                        &lt;p class=\&quot;reassurance\&quot;&gt;No problem — I&#39;ll answer all your questions and help find the best solution for you.&lt;/p&gt;\n                    &lt;/div&gt;\n                    \n                    &lt;div class=\&quot;cta-block\&quot;&gt;\n                        &lt;h5 class=\&quot;section-heading\&quot;&gt;Want to chat?&lt;/h5&gt;\n                        &lt;p class=\&quot;cta-text\&quot;&gt;Let&#39;s grab a coffee and talk about how I can help you buy your first home.&lt;/p&gt;\n                        &lt;p class=\&quot;cta-action\&quot;&gt;Just enter your details below and I&#39;ll be in touch!&lt;/p&gt;\n                    &lt;/div&gt;\n                &lt;/div&gt;\n\n                &lt;style&gt;\n                .first-home-buyers.compact {\n                    line-height: 1.4;\n                    padding: 1rem;\n                }\n\n                .compact .service-title {\n                    margin-bottom: 0.5rem;\n                    font-size: 1.3rem;\n                }\n\n                .compact .service-intro {\n                    margin-bottom: 1rem;\n                }\n\n                .compact .section-heading {\n                    margin: 1rem 0 0.5rem;\n                }\n\n                .compact .benefits-list {\n                    margin: 0.8rem 0;\n                }\n\n                .compact .benefit-item {\n                    margin-bottom: 0.5rem;\n                    padding-left: 1.5rem;\n                }\n\n                .compact .concerns-list {\n                    margin: 0.8rem 0;\n                }\n\n                .compact .reassurance {\n                    margin: 0.8rem 0;\n                }\n\n                .compact .cta-text {\n                    margin-bottom: 0.3rem;\n                }\n\n                .compact .cta-action {\n                    margin-top: 0.5rem;\n                }\n                #firsthome {\n                scroll-margin-top: 15vh;\n                }\n                &lt;/style&gt;\n                &quot;],&quot;image&quot;:[0,{&quot;srcLocal&quot;:[0,&quot;firstHomeBuyer&quot;],&quot;alt&quot;:[0,&quot;hero section image&quot;],&quot;width&quot;:[0,300],&quot;height&quot;:[0,300]}]}]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;Hero&quot;,&quot;value&quot;:true}" await-children=""><style data-emotion="css jzb1xf">.css-jzb1xf{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;padding:90px 0 50px;text-align:center;}</style><section class="css-jzb1xf"><style data-emotion="css j2kw9x">.css-j2kw9x{margin:0 auto;padding:0 20px;width:100%;max-width:540px;}@media (min-width: 768px) and (max-width: 992px){.css-j2kw9x{max-width:720px;}}@media (min-width: 992px) and (max-width: 1200px){.css-j2kw9x{max-width:960px;}}@media (min-width: 1200px) and (max-width: 1440px){.css-j2kw9x{max-width:1140px;}}@media (min-width: 1440px){.css-j2kw9x{max-width:1320px;}}</style><div class="css-j2kw9x"><style data-emotion="css jc7l3c">.css-jc7l3c{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:50px;text-align:left;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}@media (max-width: 992px){.css-jc7l3c{grid-template-columns:1fr;text-align:center;}}</style><div class="css-jc7l3c"><style data-emotion="css 1fvj7ms">.css-1fvj7ms{opacity:0.001;-webkit-transform:translateY(20px);-moz-transform:translateY(20px);-ms-transform:translateY(20px);transform:translateY(20px);-webkit-transition:opacity 0.5s,-webkit-transform 0.5s;transition:opacity 0.5s,transform 0.5s;}.css-1fvj7ms.visible{opacity:1;-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);}</style><div class="css-1fvj7ms"><style data-emotion="css aoe81g">@media (max-width: 992px){.css-aoe81g{max-width:490px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;margin:0 auto;}}.css-aoe81g h1{margin-bottom:20px;font-size:80px;line-height:84px;letter-spacing:-1px;}@media (max-width: 1200px){.css-aoe81g h1{font-size:60px;line-height:64px;}}@media (max-width: 576px){.css-aoe81g h1{font-size:50px;line-height:45px;letter-spacing:-0.5px;}}@media (min-width: 992px){.css-aoe81g p{max-width:560px;}}</style><div class="css-aoe81g"><h2><span id="firsthome">✅First Home Buyers</span></h2><p>
+                <div class="service-section first-home-buyers compact">
+                    <h5 class="service-title">Buying your first home? Let me make it easy for you.</h5>
+                    
+                    <p class="service-intro">I know buying your first home can feel overwhelming. Dealing with agents, lawyers, valuers, banks, and insurance companies is a lot — but you don't have to do it alone.</p>
+                    
+                    <div class="benefits-block">
+                        <h5 class="section-heading">Here's how I can help:</h5>
+                        <ul class="benefits-list">
+                            <li class="benefit-item">
+                                <span class="check-icon">✅</span> I'll arrange pre-approval, so you know exactly how much you can spend.
+                            </li>
+                            <li class="benefit-item">
+                                <span class="check-icon">✅</span> I'll support you from offer to settlement — every step of the way.
+                            </li>
+                            <li class="benefit-item">
+                                <span class="check-icon">✅</span> I'll help you choose the right lender and loan structure.
+                            </li>
+                            <li class="benefit-item">
+                                <span class="check-icon">✅</span> I'll negotiate a great interest rate and cash contribution for you.
+                            </li>
+                            <li class="benefit-item">
+                                <span class="check-icon">✅</span> And best of all — my service is free when you take a loan with a main bank!
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="concerns-block">
+                        <h5 class="section-heading">Worried about something?</h5>
+                        <ul class="concerns-list">
+                            <li class="concern-item">Not sure if you have enough deposit?</li>
+                            <li class="concern-item">Concerned about income or credit history?</li>
+                            <li class="concern-item">Not a NZ resident yet?</li>
+                        </ul>
+                        <p class="reassurance">No problem — I'll answer all your questions and help find the best solution for you.</p>
+                    </div>
+                    
+                    <div class="cta-block">
+                        <h5 class="section-heading">Want to chat?</h5>
+                        <p class="cta-text">Let's grab a coffee and talk about how I can help you buy your first home.</p>
+                        <p class="cta-action">Just enter your details below and I'll be in touch!</p>
+                    </div>
+                </div>
+
+                <style>
+                .first-home-buyers.compact {
+                    line-height: 1.4;
+                    padding: 1rem;
+                }
+
+                .compact .service-title {
+                    margin-bottom: 0.5rem;
+                    font-size: 1.3rem;
+                }
+
+                .compact .service-intro {
+                    margin-bottom: 1rem;
+                }
+
+                .compact .section-heading {
+                    margin: 1rem 0 0.5rem;
+                }
+
+                .compact .benefits-list {
+                    margin: 0.8rem 0;
+                }
+
+                .compact .benefit-item {
+                    margin-bottom: 0.5rem;
+                    padding-left: 1.5rem;
+                }
+
+                .compact .concerns-list {
+                    margin: 0.8rem 0;
+                }
+
+                .compact .reassurance {
+                    margin: 0.8rem 0;
+                }
+
+                .compact .cta-text {
+                    margin-bottom: 0.3rem;
+                }
+
+                .compact .cta-action {
+                    margin-top: 0.5rem;
+                }
+                #firsthome {
+                scroll-margin-top: 15vh;
+                }
+                </style>
+                </p></div></div><div class="css-1fvj7ms"><style data-emotion="css hdcn7m">.css-hdcn7m{width:100%;position:relative;}.css-hdcn7m::before{content:"";position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%, -50%);-moz-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);transform:translate(-50%, -50%);width:100%;height:100%;border-radius:100%;background:linear-gradient(
+            0deg,
+            var(--tertiary) 100%,
+            var(--primary) 0%
+        );-webkit-filter:blur(50px);filter:blur(50px);opacity:0.3;z-index:-1;}</style><figure class="css-hdcn7m"><style data-emotion="css jlzybf">.css-jlzybf{width:100%;margin-bottom:30px;min-height:450px;object-fit:contain;}@media (max-width: 992px){.css-jlzybf{min-height:auto;}}</style><img src="/_astro/first-home-buyer.D3i4yHZu.png" alt="hero section image" width="300" height="300" class="css-jlzybf"/></figure></div></div></div></section><!--astro:end--></astro-island> <astro-island uid="1BW7BR" prefix="r2" component-url="/_astro/Hero.B3AS900g.js" component-export="Hero" renderer-url="/_astro/client.DhkhUWYr.js" props="{&quot;heroType&quot;:[0,&quot;textImage&quot;],&quot;content&quot;:[0,{&quot;switchPlaces&quot;:[0,true],&quot;title&quot;:[0,&quot;&lt;span id=\&quot;refinancing\&quot;&gt;🔁Refinancing &amp; Refixing&lt;/span&gt;&quot;],&quot;paragraph&quot;:[0,&quot;\n                &lt;div class=\&quot;service-section refinancing compact\&quot;&gt;\n                    &lt;h5 class=\&quot;service-title\&quot;&gt;🏡 Thinking About Refinancing? Let&#39;s Make It Easy.&lt;/h5&gt;\n                    \n                    &lt;p class=\&quot;service-intro\&quot;&gt;Are you on a floating interest rate or is your fixed rate coming up for renewal? Wanting to refinance or top up your home loan for a new car, holiday, or renovation?&lt;/p&gt;\n                    \n                    &lt;div class=\&quot;benefits-block\&quot;&gt;\n                        &lt;ul class=\&quot;benefits-list\&quot;&gt;\n                            &lt;li class=\&quot;benefit-item\&quot;&gt;\n                                &lt;span class=\&quot;check-icon\&quot;&gt;✅&lt;/span&gt; I can help you lock in record low discounted rates – fast and easy.\n                            &lt;/li&gt;\n                            &lt;li class=\&quot;benefit-item\&quot;&gt;\n                                &lt;span class=\&quot;check-icon\&quot;&gt;✅&lt;/span&gt; I&#39;ll guide you through the process and make sure it&#39;s worth your while.\n                            &lt;/li&gt;\n                        &lt;/ul&gt;\n                    &lt;/div&gt;\n                    \n                    &lt;div class=\&quot;reasons-block\&quot;&gt;\n                        &lt;h5 class=\&quot;section-heading\&quot;&gt;📈 Why Do Refinance?&lt;/h5&gt;\n                        &lt;p&gt;Many people refinance their mortgage to:&lt;/p&gt;\n                        &lt;ul class=\&quot;reasons-list\&quot;&gt;\n                            &lt;li class=\&quot;reason-item\&quot;&gt;🔄 Consolidate debt&lt;/li&gt;\n                            &lt;li class=\&quot;reason-item\&quot;&gt;🛠️ Renovate or invest&lt;/li&gt;\n                            &lt;li class=\&quot;reason-item\&quot;&gt;💰 Access equity in their property&lt;/li&gt;\n                            &lt;li class=\&quot;reason-item\&quot;&gt;📉 Secure a better home loan interest rate&lt;/li&gt;\n                            &lt;li class=\&quot;reason-item\&quot;&gt;🔄 Move between fixed and variable rates&lt;/li&gt;\n                        &lt;/ul&gt;\n                    &lt;/div&gt;\n                    \n                    &lt;div class=\&quot;considerations-block\&quot;&gt;\n                        &lt;h5 class=\&quot;section-heading\&quot;&gt;🤔 What Should You Consider?&lt;/h5&gt;\n                        &lt;p&gt;Before making the move, it&#39;s important to weigh the costs vs long-term benefits. I&#39;ll help you do the sums. Let&#39;s consider:&lt;/p&gt;\n                        &lt;ul class=\&quot;considerations-list\&quot;&gt;\n                            &lt;li class=\&quot;consideration-item\&quot;&gt;❗ Exit or deferred establishment fees on your current loan&lt;/li&gt;\n                            &lt;li class=\&quot;consideration-item\&quot;&gt;💸 Establishment fees on your new loan — are there any special deals?&lt;/li&gt;\n                            &lt;li class=\&quot;consideration-item\&quot;&gt;📉 What happens to repayments after fixed or honeymoon rates expire?&lt;/li&gt;\n                            &lt;li class=\&quot;consideration-item\&quot;&gt;🧮 Whether you have enough equity if you&#39;re topping up&lt;/li&gt;\n                        &lt;/ul&gt;\n                    &lt;/div&gt;\n                    \n                    &lt;div class=\&quot;cta-block\&quot;&gt;\n                        &lt;h5 class=\&quot;section-heading\&quot;&gt;☕ Let&#39;s Catch Up&lt;/h5&gt;\n                        &lt;p class=\&quot;cta-text\&quot;&gt;If you&#39;d like to meet for a coffee and talk about how I can help you achieve your goals or reach financial freedom, just enter your details below and I&#39;ll be in touch.&lt;/p&gt;\n                        &lt;p class=\&quot;cta-action\&quot;&gt;Refinancing doesn&#39;t have to be hard — I&#39;ll make it easy.&lt;/p&gt;\n                    &lt;/div&gt;\n                &lt;/div&gt;\n\n                &lt;style&gt;\n                .refinancing.compact {\n                    line-height: 1.4;\n                    padding: 1rem;\n                }\n\n                .compact .service-title {\n                    margin-bottom: 0.5rem;\n                    font-size: 1.3rem;\n                }\n\n                .compact .service-intro {\n                    margin-bottom: 1rem;\n                }\n\n                .compact .section-heading {\n                    margin: 1rem 0 0.5rem;\n                }\n\n                .compact .benefits-list,\n                .compact .reasons-list,\n                .compact .considerations-list {\n                    margin: 0.8rem 0;\n                    padding-left: 1rem;\n                }\n\n                .compact .benefit-item,\n                .compact .reason-item,\n                .compact .consideration-item {\n                    margin-bottom: 0.5rem;\n                    padding-left: 1.5rem;\n                }\n\n                .compact .cta-text {\n                    margin-bottom: 0.3rem;\n                }\n\n                .compact .cta-action {\n                    margin-top: 0.5rem;\n                    font-weight: 600;\n                }\n                #refinancing {\n                scroll-margin-top: 15vh;\n                }\n                &lt;/style&gt;\n                &quot;],&quot;image&quot;:[0,{&quot;srcLocal&quot;:[0,&quot;refinance&quot;],&quot;alt&quot;:[0,&quot;hero section image&quot;],&quot;width&quot;:[0,300],&quot;height&quot;:[0,300]}]}]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;Hero&quot;,&quot;value&quot;:true}" await-children=""><style data-emotion="css jzb1xf">.css-jzb1xf{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;padding:90px 0 50px;text-align:center;}</style><section class="css-jzb1xf"><style data-emotion="css j2kw9x">.css-j2kw9x{margin:0 auto;padding:0 20px;width:100%;max-width:540px;}@media (min-width: 768px) and (max-width: 992px){.css-j2kw9x{max-width:720px;}}@media (min-width: 992px) and (max-width: 1200px){.css-j2kw9x{max-width:960px;}}@media (min-width: 1200px) and (max-width: 1440px){.css-j2kw9x{max-width:1140px;}}@media (min-width: 1440px){.css-j2kw9x{max-width:1320px;}}</style><div class="css-j2kw9x"><style data-emotion="css 1ni4x0x">.css-1ni4x0x{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:50px;text-align:left;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}@media (max-width: 992px){.css-1ni4x0x{grid-template-columns:1fr;text-align:center;}}.css-1ni4x0x >div:first-of-type{-webkit-order:2;-ms-flex-order:2;order:2;}</style><div class="css-1ni4x0x"><style data-emotion="css 1fvj7ms">.css-1fvj7ms{opacity:0.001;-webkit-transform:translateY(20px);-moz-transform:translateY(20px);-ms-transform:translateY(20px);transform:translateY(20px);-webkit-transition:opacity 0.5s,-webkit-transform 0.5s;transition:opacity 0.5s,transform 0.5s;}.css-1fvj7ms.visible{opacity:1;-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);}</style><div class="css-1fvj7ms"><style data-emotion="css aoe81g">@media (max-width: 992px){.css-aoe81g{max-width:490px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;margin:0 auto;}}.css-aoe81g h1{margin-bottom:20px;font-size:80px;line-height:84px;letter-spacing:-1px;}@media (max-width: 1200px){.css-aoe81g h1{font-size:60px;line-height:64px;}}@media (max-width: 576px){.css-aoe81g h1{font-size:50px;line-height:45px;letter-spacing:-0.5px;}}@media (min-width: 992px){.css-aoe81g p{max-width:560px;}}</style><div class="css-aoe81g"><h2><span id="refinancing">🔁Refinancing & Refixing</span></h2><p>
+                <div class="service-section refinancing compact">
+                    <h5 class="service-title">🏡 Thinking About Refinancing? Let's Make It Easy.</h5>
+                    
+                    <p class="service-intro">Are you on a floating interest rate or is your fixed rate coming up for renewal? Wanting to refinance or top up your home loan for a new car, holiday, or renovation?</p>
+                    
+                    <div class="benefits-block">
+                        <ul class="benefits-list">
+                            <li class="benefit-item">
+                                <span class="check-icon">✅</span> I can help you lock in record low discounted rates – fast and easy.
+                            </li>
+                            <li class="benefit-item">
+                                <span class="check-icon">✅</span> I'll guide you through the process and make sure it's worth your while.
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="reasons-block">
+                        <h5 class="section-heading">📈 Why Do Refinance?</h5>
+                        <p>Many people refinance their mortgage to:</p>
+                        <ul class="reasons-list">
+                            <li class="reason-item">🔄 Consolidate debt</li>
+                            <li class="reason-item">🛠️ Renovate or invest</li>
+                            <li class="reason-item">💰 Access equity in their property</li>
+                            <li class="reason-item">📉 Secure a better home loan interest rate</li>
+                            <li class="reason-item">🔄 Move between fixed and variable rates</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="considerations-block">
+                        <h5 class="section-heading">🤔 What Should You Consider?</h5>
+                        <p>Before making the move, it's important to weigh the costs vs long-term benefits. I'll help you do the sums. Let's consider:</p>
+                        <ul class="considerations-list">
+                            <li class="consideration-item">❗ Exit or deferred establishment fees on your current loan</li>
+                            <li class="consideration-item">💸 Establishment fees on your new loan — are there any special deals?</li>
+                            <li class="consideration-item">📉 What happens to repayments after fixed or honeymoon rates expire?</li>
+                            <li class="consideration-item">🧮 Whether you have enough equity if you're topping up</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="cta-block">
+                        <h5 class="section-heading">☕ Let's Catch Up</h5>
+                        <p class="cta-text">If you'd like to meet for a coffee and talk about how I can help you achieve your goals or reach financial freedom, just enter your details below and I'll be in touch.</p>
+                        <p class="cta-action">Refinancing doesn't have to be hard — I'll make it easy.</p>
+                    </div>
+                </div>
+
+                <style>
+                .refinancing.compact {
+                    line-height: 1.4;
+                    padding: 1rem;
+                }
+
+                .compact .service-title {
+                    margin-bottom: 0.5rem;
+                    font-size: 1.3rem;
+                }
+
+                .compact .service-intro {
+                    margin-bottom: 1rem;
+                }
+
+                .compact .section-heading {
+                    margin: 1rem 0 0.5rem;
+                }
+
+                .compact .benefits-list,
+                .compact .reasons-list,
+                .compact .considerations-list {
+                    margin: 0.8rem 0;
+                    padding-left: 1rem;
+                }
+
+                .compact .benefit-item,
+                .compact .reason-item,
+                .compact .consideration-item {
+                    margin-bottom: 0.5rem;
+                    padding-left: 1.5rem;
+                }
+
+                .compact .cta-text {
+                    margin-bottom: 0.3rem;
+                }
+
+                .compact .cta-action {
+                    margin-top: 0.5rem;
+                    font-weight: 600;
+                }
+                #refinancing {
+                scroll-margin-top: 15vh;
+                }
+                </style>
+                </p></div></div><div class="css-1fvj7ms"><style data-emotion="css hdcn7m">.css-hdcn7m{width:100%;position:relative;}.css-hdcn7m::before{content:"";position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%, -50%);-moz-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);transform:translate(-50%, -50%);width:100%;height:100%;border-radius:100%;background:linear-gradient(
+            0deg,
+            var(--tertiary) 100%,
+            var(--primary) 0%
+        );-webkit-filter:blur(50px);filter:blur(50px);opacity:0.3;z-index:-1;}</style><figure class="css-hdcn7m"><style data-emotion="css jlzybf">.css-jlzybf{width:100%;margin-bottom:30px;min-height:450px;object-fit:contain;}@media (max-width: 992px){.css-jlzybf{min-height:auto;}}</style><img src="/_astro/refinance.H4Dfbxfu.png" alt="hero section image" width="300" height="300" class="css-jlzybf"/></figure></div></div></div></section><!--astro:end--></astro-island> <astro-island uid="ZUM7j0" prefix="r3" component-url="/_astro/Hero.B3AS900g.js" component-export="Hero" renderer-url="/_astro/client.DhkhUWYr.js" props="{&quot;heroType&quot;:[0,&quot;textImage&quot;],&quot;content&quot;:[0,{&quot;title&quot;:[0,&quot;&lt;span id=\&quot;construction\&quot;&gt;🏡Construction Loans&lt;/span&gt;&quot;],&quot;paragraph&quot;:[0,&quot;&lt;div class=\&quot;service-section construction-loans compact\&quot;&gt;\n                &lt;h5 class=\&quot;service-title\&quot;&gt;🏡 Building Your Dream Home? I Can Help!&lt;/h5&gt;\n                &lt;p class=\&quot;service-subtitle\&quot;&gt;Construction Loans &amp; House + Land Packages&lt;/p&gt;\n                \n                &lt;p class=\&quot;service-intro\&quot;&gt;Whether you&#39;re buying land, building from scratch, or going for a turn-key package — I&#39;m here to guide you every step of the way.&lt;/p&gt;\n                \n                &lt;div class=\&quot;loan-types\&quot;&gt;\n                    &lt;div class=\&quot;loan-block\&quot;&gt;\n                        &lt;h5 class=\&quot;section-heading\&quot;&gt;🔨 Construction Loans – How It Works:&lt;/h5&gt;\n                        &lt;ul class=\&quot;benefits-list\&quot;&gt;\n                            &lt;li class=\&quot;benefit-item\&quot;&gt;✅ Only 10% deposit needed for owner-occupied&lt;/li&gt;\n                            &lt;li class=\&quot;benefit-item\&quot;&gt;✅ 20% deposit for investors&lt;/li&gt;\n                            &lt;li class=\&quot;benefit-item\&quot;&gt;✅ Interest-only repayments during the build&lt;/li&gt;\n                            &lt;li class=\&quot;benefit-item\&quot;&gt;✅ Pay interest only on what you&#39;ve used&lt;/li&gt;\n                            &lt;li class=\&quot;benefit-item\&quot;&gt;✅ Turn your plans into reality — stage by stage&lt;/li&gt;\n                            &lt;li class=\&quot;benefit-item\&quot;&gt;✅ I&#39;ll help you get all the right paperwork (Sale &amp; Purchase + Fixed Price Build Contract)&lt;/li&gt;\n                        &lt;/ul&gt;\n                    &lt;/div&gt;\n                    \n                    &lt;div class=\&quot;land-block\&quot;&gt;\n                        &lt;h5 class=\&quot;section-heading\&quot;&gt;📍 Buying Land Only?&lt;/h5&gt;\n                        &lt;p&gt;You&#39;ll need a minimum 20% deposit — I can help you get approved.&lt;/p&gt;\n                    &lt;/div&gt;\n                    \n                    &lt;div class=\&quot;turnkey-block\&quot;&gt;\n                        &lt;h5 class=\&quot;section-heading\&quot;&gt;🚪 Turn-Key Homes – Hassle-Free!&lt;/h5&gt;\n                        &lt;p&gt;Prefer a ready-to-move-in option?&lt;/p&gt;\n                        &lt;ul class=\&quot;benefits-list\&quot;&gt;\n                            &lt;li class=\&quot;benefit-item\&quot;&gt;✅ Fixed-price, no surprises&lt;/li&gt;\n                            &lt;li class=\&quot;benefit-item\&quot;&gt;✅ Just a 10% deposit, balance on completion&lt;/li&gt;\n                            &lt;li class=\&quot;benefit-item\&quot;&gt;✅ No loan repayments during the build&lt;/li&gt;\n                            &lt;li class=\&quot;benefit-item\&quot;&gt;✅ Pay mortgage only when the home is ready&lt;/li&gt;\n                            &lt;li class=\&quot;benefit-item\&quot;&gt;✅ Fewer conditions = faster approval&lt;/li&gt;\n                        &lt;/ul&gt;\n                        &lt;p class=\&quot;warning-note\&quot;&gt;⚠️ Keep in mind: Turn-key approvals usually expire after 12 months — let&#39;s get it right from the start!&lt;/p&gt;\n                    &lt;/div&gt;\n                &lt;/div&gt;\n                \n                &lt;div class=\&quot;cta-block\&quot;&gt;\n                    &lt;h5 class=\&quot;section-heading\&quot;&gt;💬 Let&#39;s Talk Over Coffee&lt;/h5&gt;\n                    &lt;p class=\&quot;cta-text\&quot;&gt;Let me show you how you can do.&lt;/p&gt;\n                    &lt;ul class=\&quot;benefits-list compact\&quot;&gt;\n                        &lt;li class=\&quot;benefit-item\&quot;&gt;✅ Custom finance solutions&lt;/li&gt;\n                        &lt;li class=\&quot;benefit-item\&quot;&gt;✅ Support from start to finish&lt;/li&gt;\n                    &lt;/ul&gt;\n                    &lt;p class=\&quot;cta-action\&quot;&gt;📞 Call or message me today and let&#39;s get building!&lt;/p&gt;\n                &lt;/div&gt;\n            &lt;/div&gt;\n\n            &lt;style&gt;\n            .construction-loans.compact {\n                line-height: 1.4;\n                padding: 1rem;\n                font-family: Arial, sans-serif;\n                color: #333;\n                max-width: 800px;\n                margin: 0 auto;\n            }\n\n            .compact .service-title {\n                font-size: 1.3rem;\n                color: #2a6496;\n                margin-bottom: 0.5rem;\n            }\n\n            .compact .service-subtitle {\n                font-weight: bold;\n                margin-bottom: 1rem;\n                color: #555;\n            }\n\n            .compact .service-intro {\n                margin-bottom: 1rem;\n            }\n\n            .compact .section-heading {\n                font-size: 1.1rem;\n                color: #2a6496;\n                margin: 1rem 0 0.5rem;\n            }\n\n            .compact .benefits-list {\n                list-style: none;\n                padding-left: 0;\n                margin: 0.8rem 0;\n            }\n\n            .compact .benefit-item {\n                margin-bottom: 0.5rem;\n                padding-left: 1.5rem;\n                position: relative;\n            }\n\n            .compact .warning-note {\n                font-style: italic;\n                color: #d35400;\n                margin: 0.8rem 0;\n            }\n\n            .compact .cta-text {\n                margin-bottom: 0.8rem;\n            }\n\n            .compact .cta-action {\n                font-weight: bold;\n                color: #2a6496;\n                margin-top: 0.5rem;\n            }\n\n            .loan-block,\n            .land-block,\n            .turnkey-block {\n                margin-bottom: 1.2rem;\n            }\n            #construction {\n                scroll-margin-top: 15vh;\n            }\n            &lt;/style&gt;&quot;],&quot;image&quot;:[0,{&quot;srcLocal&quot;:[0,&quot;constructionLoan&quot;],&quot;alt&quot;:[0,&quot;hero section image&quot;],&quot;width&quot;:[0,300],&quot;height&quot;:[0,300]}]}]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;Hero&quot;,&quot;value&quot;:true}" await-children=""><style data-emotion="css jzb1xf">.css-jzb1xf{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;padding:90px 0 50px;text-align:center;}</style><section class="css-jzb1xf"><style data-emotion="css j2kw9x">.css-j2kw9x{margin:0 auto;padding:0 20px;width:100%;max-width:540px;}@media (min-width: 768px) and (max-width: 992px){.css-j2kw9x{max-width:720px;}}@media (min-width: 992px) and (max-width: 1200px){.css-j2kw9x{max-width:960px;}}@media (min-width: 1200px) and (max-width: 1440px){.css-j2kw9x{max-width:1140px;}}@media (min-width: 1440px){.css-j2kw9x{max-width:1320px;}}</style><div class="css-j2kw9x"><style data-emotion="css jc7l3c">.css-jc7l3c{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:50px;text-align:left;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}@media (max-width: 992px){.css-jc7l3c{grid-template-columns:1fr;text-align:center;}}</style><div class="css-jc7l3c"><style data-emotion="css 1fvj7ms">.css-1fvj7ms{opacity:0.001;-webkit-transform:translateY(20px);-moz-transform:translateY(20px);-ms-transform:translateY(20px);transform:translateY(20px);-webkit-transition:opacity 0.5s,-webkit-transform 0.5s;transition:opacity 0.5s,transform 0.5s;}.css-1fvj7ms.visible{opacity:1;-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);}</style><div class="css-1fvj7ms"><style data-emotion="css aoe81g">@media (max-width: 992px){.css-aoe81g{max-width:490px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;margin:0 auto;}}.css-aoe81g h1{margin-bottom:20px;font-size:80px;line-height:84px;letter-spacing:-1px;}@media (max-width: 1200px){.css-aoe81g h1{font-size:60px;line-height:64px;}}@media (max-width: 576px){.css-aoe81g h1{font-size:50px;line-height:45px;letter-spacing:-0.5px;}}@media (min-width: 992px){.css-aoe81g p{max-width:560px;}}</style><div class="css-aoe81g"><h2><span id="construction">🏡Construction Loans</span></h2><p><div class="service-section construction-loans compact">
+                <h5 class="service-title">🏡 Building Your Dream Home? I Can Help!</h5>
+                <p class="service-subtitle">Construction Loans & House + Land Packages</p>
+                
+                <p class="service-intro">Whether you're buying land, building from scratch, or going for a turn-key package — I'm here to guide you every step of the way.</p>
+                
+                <div class="loan-types">
+                    <div class="loan-block">
+                        <h5 class="section-heading">🔨 Construction Loans – How It Works:</h5>
+                        <ul class="benefits-list">
+                            <li class="benefit-item">✅ Only 10% deposit needed for owner-occupied</li>
+                            <li class="benefit-item">✅ 20% deposit for investors</li>
+                            <li class="benefit-item">✅ Interest-only repayments during the build</li>
+                            <li class="benefit-item">✅ Pay interest only on what you've used</li>
+                            <li class="benefit-item">✅ Turn your plans into reality — stage by stage</li>
+                            <li class="benefit-item">✅ I'll help you get all the right paperwork (Sale & Purchase + Fixed Price Build Contract)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="land-block">
+                        <h5 class="section-heading">📍 Buying Land Only?</h5>
+                        <p>You'll need a minimum 20% deposit — I can help you get approved.</p>
+                    </div>
+                    
+                    <div class="turnkey-block">
+                        <h5 class="section-heading">🚪 Turn-Key Homes – Hassle-Free!</h5>
+                        <p>Prefer a ready-to-move-in option?</p>
+                        <ul class="benefits-list">
+                            <li class="benefit-item">✅ Fixed-price, no surprises</li>
+                            <li class="benefit-item">✅ Just a 10% deposit, balance on completion</li>
+                            <li class="benefit-item">✅ No loan repayments during the build</li>
+                            <li class="benefit-item">✅ Pay mortgage only when the home is ready</li>
+                            <li class="benefit-item">✅ Fewer conditions = faster approval</li>
+                        </ul>
+                        <p class="warning-note">⚠️ Keep in mind: Turn-key approvals usually expire after 12 months — let's get it right from the start!</p>
+                    </div>
+                </div>
+                
+                <div class="cta-block">
+                    <h5 class="section-heading">💬 Let's Talk Over Coffee</h5>
+                    <p class="cta-text">Let me show you how you can do.</p>
+                    <ul class="benefits-list compact">
+                        <li class="benefit-item">✅ Custom finance solutions</li>
+                        <li class="benefit-item">✅ Support from start to finish</li>
+                    </ul>
+                    <p class="cta-action">📞 Call or message me today and let's get building!</p>
+                </div>
+            </div>
+
+            <style>
+            .construction-loans.compact {
+                line-height: 1.4;
+                padding: 1rem;
+                font-family: Arial, sans-serif;
+                color: #333;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
+            .compact .service-title {
+                font-size: 1.3rem;
+                color: #2a6496;
+                margin-bottom: 0.5rem;
+            }
+
+            .compact .service-subtitle {
+                font-weight: bold;
+                margin-bottom: 1rem;
+                color: #555;
+            }
+
+            .compact .service-intro {
+                margin-bottom: 1rem;
+            }
+
+            .compact .section-heading {
+                font-size: 1.1rem;
+                color: #2a6496;
+                margin: 1rem 0 0.5rem;
+            }
+
+            .compact .benefits-list {
+                list-style: none;
+                padding-left: 0;
+                margin: 0.8rem 0;
+            }
+
+            .compact .benefit-item {
+                margin-bottom: 0.5rem;
+                padding-left: 1.5rem;
+                position: relative;
+            }
+
+            .compact .warning-note {
+                font-style: italic;
+                color: #d35400;
+                margin: 0.8rem 0;
+            }
+
+            .compact .cta-text {
+                margin-bottom: 0.8rem;
+            }
+
+            .compact .cta-action {
+                font-weight: bold;
+                color: #2a6496;
+                margin-top: 0.5rem;
+            }
+
+            .loan-block,
+            .land-block,
+            .turnkey-block {
+                margin-bottom: 1.2rem;
+            }
+            #construction {
+                scroll-margin-top: 15vh;
+            }
+            </style></p></div></div><div class="css-1fvj7ms"><style data-emotion="css hdcn7m">.css-hdcn7m{width:100%;position:relative;}.css-hdcn7m::before{content:"";position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%, -50%);-moz-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);transform:translate(-50%, -50%);width:100%;height:100%;border-radius:100%;background:linear-gradient(
+            0deg,
+            var(--tertiary) 100%,
+            var(--primary) 0%
+        );-webkit-filter:blur(50px);filter:blur(50px);opacity:0.3;z-index:-1;}</style><figure class="css-hdcn7m"><style data-emotion="css jlzybf">.css-jlzybf{width:100%;margin-bottom:30px;min-height:450px;object-fit:contain;}@media (max-width: 992px){.css-jlzybf{min-height:auto;}}</style><img src="/_astro/construction-loan.ULbqefZ7.png" alt="hero section image" width="300" height="300" class="css-jlzybf"/></figure></div></div></div></section><!--astro:end--></astro-island> <astro-island uid="FHOo6" prefix="r4" component-url="/_astro/Hero.B3AS900g.js" component-export="Hero" renderer-url="/_astro/client.DhkhUWYr.js" props="{&quot;heroType&quot;:[0,&quot;textImage&quot;],&quot;content&quot;:[0,{&quot;switchPlaces&quot;:[0,true],&quot;title&quot;:[0,&quot;&lt;span id=\&quot;investment\&quot;&gt;📈 Investment Properties&lt;/span&gt;&quot;],&quot;paragraph&quot;:[0,&quot;&lt;div class=\&quot;service-section investment-property compact\&quot;&gt;\n                    &lt;h5 class=\&quot;service-title\&quot;&gt;🏠 Investment Property &amp; Rentals&lt;/h5&gt;\n                    &lt;p class=\&quot;service-subtitle\&quot;&gt;Looking to buy a rental or investment property? I can help.&lt;/p&gt;\n                    \n                    &lt;p class=\&quot;service-intro\&quot;&gt;Right now, banks usually require a 30% deposit for investment properties (they&#39;ll lend up to 70%). But that doesn&#39;t mean you need to come up with the deposit in cash.&lt;/p&gt;\n                    \n                    &lt;div class=\&quot;benefits-block\&quot;&gt;\n                        &lt;h5 class=\&quot;section-heading\&quot;&gt;Here&#39;s how I can help:&lt;/h5&gt;\n                        &lt;ul class=\&quot;benefits-list\&quot;&gt;\n                            &lt;li class=\&quot;benefit-item\&quot;&gt;✅ I&#39;ll review your current properties to see if you can use existing equity — without using your own money.&lt;/li&gt;\n                            &lt;li class=\&quot;benefit-item\&quot;&gt;✅ I&#39;ll structure the loan to avoid cross-collateralisation, so your properties stay as separate as possible.&lt;/li&gt;\n                            &lt;li class=\&quot;benefit-item\&quot;&gt;✅ I&#39;ll make sure the bank only takes as much security as they actually need — no more.&lt;/li&gt;\n                        &lt;/ul&gt;\n                    &lt;/div&gt;\n                    \n                    &lt;div class=\&quot;cta-block\&quot;&gt;\n                        &lt;p class=\&quot;cta-text\&quot;&gt;Let&#39;s make it easy.&lt;/p&gt;\n                        &lt;p class=\&quot;cta-question\&quot;&gt;Want to chat about how you can grow your investment portfolio without stress?&lt;/p&gt;\n                        &lt;p class=\&quot;cta-action\&quot;&gt;Let&#39;s meet for a coffee — just enter your details below and I&#39;ll be in touch!&lt;/p&gt;\n                    &lt;/div&gt;\n                &lt;/div&gt;\n\n                &lt;style&gt;\n                .investment-property.compact {\n                    line-height: 1.4;\n                    padding: 1rem;\n                    font-family: Arial, sans-serif;\n                    color: #333;\n                    max-width: 800px;\n                    margin: 0 auto;\n                }\n\n                .compact .service-title {\n                    font-size: 1.3rem;\n                    color: #2a6496;\n                    margin-bottom: 0.5rem;\n                }\n\n                .compact .service-subtitle {\n                    font-weight: bold;\n                    margin-bottom: 1rem;\n                    color: #555;\n                }\n\n                .compact .service-intro {\n                    margin-bottom: 1rem;\n                }\n\n                .compact .section-heading {\n                    font-size: 1.1rem;\n                    color: #2a6496;\n                    margin: 1rem 0 0.5rem;\n                }\n\n                .compact .benefits-list {\n                    list-style: none;\n                    padding-left: 0;\n                    margin: 0.8rem 0;\n                }\n\n                .compact .benefit-item {\n                    margin-bottom: 0.5rem;\n                    padding-left: 1.5rem;\n                    position: relative;\n                }\n\n                .compact .cta-text {\n                    font-weight: bold;\n                    margin: 1rem 0 0.5rem;\n                }\n\n                .compact .cta-question {\n                    margin-bottom: 0.5rem;\n                    font-style: italic;\n                }\n\n                .compact .cta-action {\n                    font-weight: bold;\n                    color: #2a6496;\n                    margin-top: 0.5rem;\n                }\n                #investment {\n                   scroll-margin-top: 15vh;\n                }\n                &lt;/style&gt;&quot;],&quot;image&quot;:[0,{&quot;srcLocal&quot;:[0,&quot;investment&quot;],&quot;alt&quot;:[0,&quot;hero section image&quot;],&quot;width&quot;:[0,300],&quot;height&quot;:[0,300]}]}]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;Hero&quot;,&quot;value&quot;:true}" await-children=""><style data-emotion="css jzb1xf">.css-jzb1xf{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;padding:90px 0 50px;text-align:center;}</style><section class="css-jzb1xf"><style data-emotion="css j2kw9x">.css-j2kw9x{margin:0 auto;padding:0 20px;width:100%;max-width:540px;}@media (min-width: 768px) and (max-width: 992px){.css-j2kw9x{max-width:720px;}}@media (min-width: 992px) and (max-width: 1200px){.css-j2kw9x{max-width:960px;}}@media (min-width: 1200px) and (max-width: 1440px){.css-j2kw9x{max-width:1140px;}}@media (min-width: 1440px){.css-j2kw9x{max-width:1320px;}}</style><div class="css-j2kw9x"><style data-emotion="css 1ni4x0x">.css-1ni4x0x{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:50px;text-align:left;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}@media (max-width: 992px){.css-1ni4x0x{grid-template-columns:1fr;text-align:center;}}.css-1ni4x0x >div:first-of-type{-webkit-order:2;-ms-flex-order:2;order:2;}</style><div class="css-1ni4x0x"><style data-emotion="css 1fvj7ms">.css-1fvj7ms{opacity:0.001;-webkit-transform:translateY(20px);-moz-transform:translateY(20px);-ms-transform:translateY(20px);transform:translateY(20px);-webkit-transition:opacity 0.5s,-webkit-transform 0.5s;transition:opacity 0.5s,transform 0.5s;}.css-1fvj7ms.visible{opacity:1;-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);}</style><div class="css-1fvj7ms"><style data-emotion="css aoe81g">@media (max-width: 992px){.css-aoe81g{max-width:490px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;margin:0 auto;}}.css-aoe81g h1{margin-bottom:20px;font-size:80px;line-height:84px;letter-spacing:-1px;}@media (max-width: 1200px){.css-aoe81g h1{font-size:60px;line-height:64px;}}@media (max-width: 576px){.css-aoe81g h1{font-size:50px;line-height:45px;letter-spacing:-0.5px;}}@media (min-width: 992px){.css-aoe81g p{max-width:560px;}}</style><div class="css-aoe81g"><h2><span id="investment">📈 Investment Properties</span></h2><p><div class="service-section investment-property compact">
+                    <h5 class="service-title">🏠 Investment Property & Rentals</h5>
+                    <p class="service-subtitle">Looking to buy a rental or investment property? I can help.</p>
+                    
+                    <p class="service-intro">Right now, banks usually require a 30% deposit for investment properties (they'll lend up to 70%). But that doesn't mean you need to come up with the deposit in cash.</p>
+                    
+                    <div class="benefits-block">
+                        <h5 class="section-heading">Here's how I can help:</h5>
+                        <ul class="benefits-list">
+                            <li class="benefit-item">✅ I'll review your current properties to see if you can use existing equity — without using your own money.</li>
+                            <li class="benefit-item">✅ I'll structure the loan to avoid cross-collateralisation, so your properties stay as separate as possible.</li>
+                            <li class="benefit-item">✅ I'll make sure the bank only takes as much security as they actually need — no more.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="cta-block">
+                        <p class="cta-text">Let's make it easy.</p>
+                        <p class="cta-question">Want to chat about how you can grow your investment portfolio without stress?</p>
+                        <p class="cta-action">Let's meet for a coffee — just enter your details below and I'll be in touch!</p>
+                    </div>
+                </div>
+
+                <style>
+                .investment-property.compact {
+                    line-height: 1.4;
+                    padding: 1rem;
+                    font-family: Arial, sans-serif;
+                    color: #333;
+                    max-width: 800px;
+                    margin: 0 auto;
+                }
+
+                .compact .service-title {
+                    font-size: 1.3rem;
+                    color: #2a6496;
+                    margin-bottom: 0.5rem;
+                }
+
+                .compact .service-subtitle {
+                    font-weight: bold;
+                    margin-bottom: 1rem;
+                    color: #555;
+                }
+
+                .compact .service-intro {
+                    margin-bottom: 1rem;
+                }
+
+                .compact .section-heading {
+                    font-size: 1.1rem;
+                    color: #2a6496;
+                    margin: 1rem 0 0.5rem;
+                }
+
+                .compact .benefits-list {
+                    list-style: none;
+                    padding-left: 0;
+                    margin: 0.8rem 0;
+                }
+
+                .compact .benefit-item {
+                    margin-bottom: 0.5rem;
+                    padding-left: 1.5rem;
+                    position: relative;
+                }
+
+                .compact .cta-text {
+                    font-weight: bold;
+                    margin: 1rem 0 0.5rem;
+                }
+
+                .compact .cta-question {
+                    margin-bottom: 0.5rem;
+                    font-style: italic;
+                }
+
+                .compact .cta-action {
+                    font-weight: bold;
+                    color: #2a6496;
+                    margin-top: 0.5rem;
+                }
+                #investment {
+                   scroll-margin-top: 15vh;
+                }
+                </style></p></div></div><div class="css-1fvj7ms"><style data-emotion="css hdcn7m">.css-hdcn7m{width:100%;position:relative;}.css-hdcn7m::before{content:"";position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%, -50%);-moz-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);transform:translate(-50%, -50%);width:100%;height:100%;border-radius:100%;background:linear-gradient(
+            0deg,
+            var(--tertiary) 100%,
+            var(--primary) 0%
+        );-webkit-filter:blur(50px);filter:blur(50px);opacity:0.3;z-index:-1;}</style><figure class="css-hdcn7m"><style data-emotion="css jlzybf">.css-jlzybf{width:100%;margin-bottom:30px;min-height:450px;object-fit:contain;}@media (max-width: 992px){.css-jlzybf{min-height:auto;}}</style><img src="/_astro/investment-property.DNPB_pjC.png" alt="hero section image" width="300" height="300" class="css-jlzybf"/></figure></div></div></div></section><!--astro:end--></astro-island> <astro-island uid="Orvdu" prefix="r5" component-url="/_astro/Hero.B3AS900g.js" component-export="Hero" renderer-url="/_astro/client.DhkhUWYr.js" props="{&quot;heroType&quot;:[0,&quot;textImage&quot;],&quot;content&quot;:[0,{&quot;title&quot;:[0,&quot;&lt;span id=\&quot;bridging\&quot;&gt;🌉Bridging Loans Made Easy&lt;/span&gt;&quot;],&quot;paragraph&quot;:[0,&quot;\n                &lt;div class=\&quot;service-section bridging-loan compact\&quot;&gt;\n                    &lt;h5 class=\&quot;service-title\&quot;&gt; Want to buy before you sell?&lt;/h5&gt;\n                    &lt;p class=\&quot;service-intro\&quot;&gt;A bridging loan can help you secure your next home before your current one is sold.&lt;/p&gt;\n                    \n                    &lt;div class=\&quot;explanation-block\&quot;&gt;\n                        &lt;h5 class=\&quot;section-heading\&quot;&gt;What is a Bridging Loan?&lt;/h5&gt;\n                        &lt;p&gt;It&#39;s a short-term loan that \&quot;bridges the gap\&quot; between buying your new home and selling your current one. Your lender will take security over both properties until the process is complete.&lt;/p&gt;\n                        &lt;ul class=\&quot;benefits-list\&quot;&gt;\n                            &lt;li class=\&quot;benefit-item\&quot;&gt;✅ Interest-only repayments during the bridging period&lt;/li&gt;\n                            &lt;li class=\&quot;benefit-item\&quot;&gt;✅ Access up to 100% of your new property&#39;s value (plus fees)&lt;/li&gt;\n                            &lt;li class=\&quot;benefit-item\&quot;&gt;✅ Capitalise the interest so you don&#39;t make repayments until your current home sells&lt;/li&gt;\n                        &lt;/ul&gt;\n                    &lt;/div&gt;\n                    \n                    &lt;div class=\&quot;benefits-block\&quot;&gt;\n                        &lt;h5 class=\&quot;section-heading\&quot;&gt;Why Consider It?&lt;/h5&gt;\n                        &lt;ul class=\&quot;benefits-list\&quot;&gt;\n                            &lt;li class=\&quot;benefit-item\&quot;&gt;🏡 You can move quickly on a new home&lt;/li&gt;\n                            &lt;li class=\&quot;benefit-item\&quot;&gt;🛠️ Build your dream home while living in your current one&lt;/li&gt;\n                            &lt;li class=\&quot;benefit-item\&quot;&gt;⏳ Up to 6 months to sell (or 12 months if you&#39;re building)&lt;/li&gt;\n                            &lt;li class=\&quot;benefit-item\&quot;&gt;💡 Loan automatically switches to a standard mortgage after sale&lt;/li&gt;\n                        &lt;/ul&gt;\n                    &lt;/div&gt;\n                    \n                    &lt;div class=\&quot;considerations-block\&quot;&gt;\n                        &lt;h5 class=\&quot;section-heading\&quot;&gt;Key Things to Think About&lt;/h5&gt;\n                        &lt;ul class=\&quot;considerations-list\&quot;&gt;\n                            &lt;li class=\&quot;consideration-item\&quot;&gt;Do you have an offer on your current home?&lt;/li&gt;\n                            &lt;li class=\&quot;consideration-item\&quot;&gt;Are you buying or building?&lt;/li&gt;\n                            &lt;li class=\&quot;consideration-item\&quot;&gt;Will you live in the new property or rent it out?&lt;/li&gt;\n                            &lt;li class=\&quot;consideration-item\&quot;&gt;Can you afford to service both loans during the transition?&lt;/li&gt;\n                        &lt;/ul&gt;\n                        &lt;p class=\&quot;reassurance\&quot;&gt;Let&#39;s work out the best fit for you and minimise risk.&lt;/p&gt;\n                    &lt;/div&gt;\n                    \n                    &lt;div class=\&quot;capitalised-block\&quot;&gt;\n                        &lt;h5 class=\&quot;section-heading\&quot;&gt;Capitalised Interest Bridging Loans&lt;/h5&gt;\n                        &lt;ul class=\&quot;benefits-list\&quot;&gt;\n                            &lt;li class=\&quot;benefit-item\&quot;&gt;✔ No repayments on the new loan during the transition&lt;/li&gt;\n                            &lt;li class=\&quot;benefit-item\&quot;&gt;✔ Interest builds into your loan instead of being paid monthly&lt;/li&gt;\n                            &lt;li class=\&quot;benefit-item\&quot;&gt;✔ Gives you breathing room to sell at the right time&lt;/li&gt;\n                        &lt;/ul&gt;\n                    &lt;/div&gt;\n                    \n                    &lt;div class=\&quot;cta-block\&quot;&gt;\n                        &lt;h5 class=\&quot;section-heading\&quot;&gt;Let&#39;s Talk&lt;/h5&gt;\n                        &lt;p class=\&quot;cta-text\&quot;&gt;If you&#39;re exploring your next move and want a smooth transition, let&#39;s meet for a coffee and chat about how I can help.&lt;/p&gt;\n                    &lt;/div&gt;\n                &lt;/div&gt;\n\n                &lt;style&gt;\n                .bridging-loan.compact {\n                    line-height: 1.4;\n                    padding: 1rem;\n                    font-family: Arial, sans-serif;\n                    color: #333;\n                    max-width: 800px;\n                    margin: 0 auto;\n                }\n\n                .compact .service-title {\n                    font-size: 1.3rem;\n                    color: #2a6496;\n                    margin-bottom: 0.5rem;\n                }\n\n                .compact .service-intro {\n                    margin-bottom: 1rem;\n                }\n\n                .compact .section-heading {\n                    font-size: 1.1rem;\n                    color: #2a6496;\n                    margin: 1rem 0 0.5rem;\n                }\n\n                .compact .benefits-list,\n                .compact .considerations-list {\n                    list-style: none;\n                    padding-left: 0;\n                    margin: 0.8rem 0;\n                }\n\n                .compact .benefit-item,\n                .compact .consideration-item {\n                    margin-bottom: 0.5rem;\n                    padding-left: 1.5rem;\n                    position: relative;\n                }\n\n                .compact .reassurance {\n                    font-style: italic;\n                    margin: 0.8rem 0;\n                }\n\n                .compact .cta-text {\n                    margin-bottom: 0.5rem;\n                }\n                #bridging {\n                    scroll-margin-top: 15vh;\n                }\n                &lt;/style&gt;\n                &quot;],&quot;image&quot;:[0,{&quot;srcLocal&quot;:[0,&quot;bridgeLoans&quot;],&quot;alt&quot;:[0,&quot;hero section image&quot;],&quot;width&quot;:[0,300],&quot;height&quot;:[0,300]}]}]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;Hero&quot;,&quot;value&quot;:true}" await-children=""><style data-emotion="css jzb1xf">.css-jzb1xf{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;padding:90px 0 50px;text-align:center;}</style><section class="css-jzb1xf"><style data-emotion="css j2kw9x">.css-j2kw9x{margin:0 auto;padding:0 20px;width:100%;max-width:540px;}@media (min-width: 768px) and (max-width: 992px){.css-j2kw9x{max-width:720px;}}@media (min-width: 992px) and (max-width: 1200px){.css-j2kw9x{max-width:960px;}}@media (min-width: 1200px) and (max-width: 1440px){.css-j2kw9x{max-width:1140px;}}@media (min-width: 1440px){.css-j2kw9x{max-width:1320px;}}</style><div class="css-j2kw9x"><style data-emotion="css jc7l3c">.css-jc7l3c{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:50px;text-align:left;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}@media (max-width: 992px){.css-jc7l3c{grid-template-columns:1fr;text-align:center;}}</style><div class="css-jc7l3c"><style data-emotion="css 1fvj7ms">.css-1fvj7ms{opacity:0.001;-webkit-transform:translateY(20px);-moz-transform:translateY(20px);-ms-transform:translateY(20px);transform:translateY(20px);-webkit-transition:opacity 0.5s,-webkit-transform 0.5s;transition:opacity 0.5s,transform 0.5s;}.css-1fvj7ms.visible{opacity:1;-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);}</style><div class="css-1fvj7ms"><style data-emotion="css aoe81g">@media (max-width: 992px){.css-aoe81g{max-width:490px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;margin:0 auto;}}.css-aoe81g h1{margin-bottom:20px;font-size:80px;line-height:84px;letter-spacing:-1px;}@media (max-width: 1200px){.css-aoe81g h1{font-size:60px;line-height:64px;}}@media (max-width: 576px){.css-aoe81g h1{font-size:50px;line-height:45px;letter-spacing:-0.5px;}}@media (min-width: 992px){.css-aoe81g p{max-width:560px;}}</style><div class="css-aoe81g"><h2><span id="bridging">🌉Bridging Loans Made Easy</span></h2><p>
+                <div class="service-section bridging-loan compact">
+                    <h5 class="service-title"> Want to buy before you sell?</h5>
+                    <p class="service-intro">A bridging loan can help you secure your next home before your current one is sold.</p>
+                    
+                    <div class="explanation-block">
+                        <h5 class="section-heading">What is a Bridging Loan?</h5>
+                        <p>It's a short-term loan that "bridges the gap" between buying your new home and selling your current one. Your lender will take security over both properties until the process is complete.</p>
+                        <ul class="benefits-list">
+                            <li class="benefit-item">✅ Interest-only repayments during the bridging period</li>
+                            <li class="benefit-item">✅ Access up to 100% of your new property's value (plus fees)</li>
+                            <li class="benefit-item">✅ Capitalise the interest so you don't make repayments until your current home sells</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="benefits-block">
+                        <h5 class="section-heading">Why Consider It?</h5>
+                        <ul class="benefits-list">
+                            <li class="benefit-item">🏡 You can move quickly on a new home</li>
+                            <li class="benefit-item">🛠️ Build your dream home while living in your current one</li>
+                            <li class="benefit-item">⏳ Up to 6 months to sell (or 12 months if you're building)</li>
+                            <li class="benefit-item">💡 Loan automatically switches to a standard mortgage after sale</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="considerations-block">
+                        <h5 class="section-heading">Key Things to Think About</h5>
+                        <ul class="considerations-list">
+                            <li class="consideration-item">Do you have an offer on your current home?</li>
+                            <li class="consideration-item">Are you buying or building?</li>
+                            <li class="consideration-item">Will you live in the new property or rent it out?</li>
+                            <li class="consideration-item">Can you afford to service both loans during the transition?</li>
+                        </ul>
+                        <p class="reassurance">Let's work out the best fit for you and minimise risk.</p>
+                    </div>
+                    
+                    <div class="capitalised-block">
+                        <h5 class="section-heading">Capitalised Interest Bridging Loans</h5>
+                        <ul class="benefits-list">
+                            <li class="benefit-item">✔ No repayments on the new loan during the transition</li>
+                            <li class="benefit-item">✔ Interest builds into your loan instead of being paid monthly</li>
+                            <li class="benefit-item">✔ Gives you breathing room to sell at the right time</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="cta-block">
+                        <h5 class="section-heading">Let's Talk</h5>
+                        <p class="cta-text">If you're exploring your next move and want a smooth transition, let's meet for a coffee and chat about how I can help.</p>
+                    </div>
+                </div>
+
+                <style>
+                .bridging-loan.compact {
+                    line-height: 1.4;
+                    padding: 1rem;
+                    font-family: Arial, sans-serif;
+                    color: #333;
+                    max-width: 800px;
+                    margin: 0 auto;
+                }
+
+                .compact .service-title {
+                    font-size: 1.3rem;
+                    color: #2a6496;
+                    margin-bottom: 0.5rem;
+                }
+
+                .compact .service-intro {
+                    margin-bottom: 1rem;
+                }
+
+                .compact .section-heading {
+                    font-size: 1.1rem;
+                    color: #2a6496;
+                    margin: 1rem 0 0.5rem;
+                }
+
+                .compact .benefits-list,
+                .compact .considerations-list {
+                    list-style: none;
+                    padding-left: 0;
+                    margin: 0.8rem 0;
+                }
+
+                .compact .benefit-item,
+                .compact .consideration-item {
+                    margin-bottom: 0.5rem;
+                    padding-left: 1.5rem;
+                    position: relative;
+                }
+
+                .compact .reassurance {
+                    font-style: italic;
+                    margin: 0.8rem 0;
+                }
+
+                .compact .cta-text {
+                    margin-bottom: 0.5rem;
+                }
+                #bridging {
+                    scroll-margin-top: 15vh;
+                }
+                </style>
+                </p></div></div><div class="css-1fvj7ms"><style data-emotion="css hdcn7m">.css-hdcn7m{width:100%;position:relative;}.css-hdcn7m::before{content:"";position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%, -50%);-moz-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);transform:translate(-50%, -50%);width:100%;height:100%;border-radius:100%;background:linear-gradient(
+            0deg,
+            var(--tertiary) 100%,
+            var(--primary) 0%
+        );-webkit-filter:blur(50px);filter:blur(50px);opacity:0.3;z-index:-1;}</style><figure class="css-hdcn7m"><style data-emotion="css jlzybf">.css-jlzybf{width:100%;margin-bottom:30px;min-height:450px;object-fit:contain;}@media (max-width: 992px){.css-jlzybf{min-height:auto;}}</style><img src="/_astro/bridge-loans.DkQ4Cp4V.png" alt="hero section image" width="300" height="300" class="css-jlzybf"/></figure></div></div></div></section><!--astro:end--></astro-island> <astro-island uid="1bXcg1" prefix="r6" component-url="/_astro/Hero.B3AS900g.js" component-export="Hero" renderer-url="/_astro/client.DhkhUWYr.js" props="{&quot;heroType&quot;:[0,&quot;textImage&quot;],&quot;content&quot;:[0,{&quot;switchPlaces&quot;:[0,true],&quot;title&quot;:[0,&quot;&lt;span id=\&quot;split\&quot;&gt; ✂️Split loans&lt;/span&gt;&quot;],&quot;paragraph&quot;:[0,&quot;\n                &lt;div class=\&quot;service-section split-loans compact\&quot;&gt;\n                &lt;h5 class=\&quot;service-title\&quot;&gt;Split Loans for Separate Buyers&lt;/h5&gt;\n                &lt;p class=\&quot;service-subtitle\&quot;&gt;Own a property together—keep your finances separate.&lt;/p&gt;\n                &lt;p class=\&quot;service-intro\&quot;&gt;A split loan (not to be confused with fixed/variable) lets two or more people buy a home together while keeping their loan portions, repayments, and responsibilities separate. Perfect for people in non-traditional arrangements like friends, siblings, or separated couples who want to co-own a property but maintain financial independence.&lt;/p&gt;\n                &lt;div class=\&quot;how-it-works\&quot;&gt;\n                    &lt;h5 class=\&quot;section-heading\&quot;&gt;How It Works&lt;/h5&gt;\n                    &lt;p&gt;Each borrower takes out their own individual loan for their share of the property.&lt;/p&gt;\n                    &lt;p&gt;You&#39;re both on the property title, but each of you has:&lt;/p&gt;\n                    &lt;ul class=\&quot;benefits-list\&quot;&gt;\n                        &lt;li class=\&quot;benefit-item\&quot;&gt;✔️ Your own loan&lt;/li&gt;\n                        &lt;li class=\&quot;benefit-item\&quot;&gt;✔️ Your own repayment schedule&lt;/li&gt;\n                        &lt;li class=\&quot;benefit-item\&quot;&gt;✔️ Your own interest rate (can be fixed or variable)&lt;/li&gt;\n                        &lt;li class=\&quot;benefit-item\&quot;&gt;✔️ Your own responsibility—no joint liability&lt;/li&gt;\n                    &lt;/ul&gt;\n                &lt;/div&gt;\n                &lt;div class=\&quot;benefits-block\&quot;&gt;\n                    &lt;h5 class=\&quot;section-heading\&quot;&gt;Why People Choose Split Loans&lt;/h5&gt;\n                    &lt;ul class=\&quot;benefits-list\&quot;&gt;\n                        &lt;li class=\&quot;benefit-item\&quot;&gt;✅ Keep your finances independent&lt;/li&gt;\n                        &lt;li class=\&quot;benefit-item\&quot;&gt;✅ Protect your credit—you&#39;re not responsible if the other person misses repayments&lt;/li&gt;\n                        &lt;li class=\&quot;benefit-item\&quot;&gt;✅ Flexible loan terms—each person can choose what suits them&lt;/li&gt;\n                        &lt;li class=\&quot;benefit-item\&quot;&gt;✅ Perfect for co-buying with friends, family, or after separation&lt;/li&gt;\n                    &lt;/ul&gt;\n                &lt;/div&gt;\n                &lt;div class=\&quot;considerations-block\&quot;&gt;\n                    &lt;h5 class=\&quot;section-heading\&quot;&gt;Is This Right for You?&lt;/h5&gt;\n                    &lt;ul class=\&quot;considerations-list\&quot;&gt;\n                        &lt;li class=\&quot;consideration-item\&quot;&gt;Buying a home with someone you&#39;re not financially linked to&lt;/li&gt;\n                        &lt;li class=\&quot;consideration-item\&quot;&gt;Want full control over your own portion of the loan&lt;/li&gt;\n                        &lt;li class=\&quot;consideration-item\&quot;&gt;Want peace of mind that your credit and repayments are protected&lt;/li&gt;\n                    &lt;/ul&gt;\n                &lt;/div&gt;\n                &lt;div class=\&quot;cta-block\&quot;&gt;\n                    &lt;h5 class=\&quot;section-heading\&quot;&gt;Let&#39;s Make It Easy&lt;/h5&gt;\n                    &lt;p class=\&quot;cta-text\&quot;&gt;If you&#39;re thinking about buying a property with someone else—but want to stay financially independent, this structure might be perfect for you.&lt;/p&gt;\n                    &lt;p class=\&quot;cta-action\&quot;&gt;Let&#39;s talk it through and see if it suits your situation.&lt;/p&gt;\n                &lt;/div&gt;\n            &lt;/div&gt;\n            &lt;style&gt;\n            .split-loans.compact {\n                line-height: 1.4;\n                padding: 1rem;\n                font-family: Arial, sans-serif;\n                color: #333;\n                max-width: 800px;\n                margin: 0 auto;\n            }\n\n            .compact .service-title {\n                font-size: 1.3rem;\n                color: #2a6496;\n                margin-bottom: 0.5rem;\n            }\n\n            .compact .service-subtitle {\n                font-weight: bold;\n                margin-bottom: 1rem;\n                color: #555;\n            }\n\n            .compact .service-intro {\n                margin-bottom: 1rem;\n            }\n\n            .compact .section-heading {\n                font-size: 1.1rem;\n                color: #2a6496;\n                margin: 1rem 0 0.5rem;\n            }\n\n            .compact .benefits-list,\n            .compact .considerations-list {\n                list-style: none;\n                padding-left: 0;\n                margin: 0.8rem 0;\n            }\n\n            .compact .benefit-item,\n            .compact .consideration-item {\n                margin-bottom: 0.5rem;\n                padding-left: 1.5rem;\n                position: relative;\n            }\n\n            .compact .consideration-item::before {\n                content: \&quot;•\&quot;;\n                color: #2a6496;\n                font-weight: bold;\n                display: inline-block;\n                width: 1em;\n                margin-left: -1em;\n            }\n\n            .compact .cta-text {\n                margin-bottom: 0.5rem;\n            }\n\n            .compact .cta-action {\n                font-weight: bold;\n                color: #2a6496;\n                margin-top: 0.5rem;\n            }\n            #split {\n                scroll-margin-top: 15vh;\n            }\n            &lt;/style&gt;\n            &quot;],&quot;image&quot;:[0,{&quot;srcLocal&quot;:[0,&quot;splitLoan&quot;],&quot;alt&quot;:[0,&quot;hero section image&quot;],&quot;width&quot;:[0,300],&quot;height&quot;:[0,300]}]}]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;Hero&quot;,&quot;value&quot;:true}" await-children=""><style data-emotion="css jzb1xf">.css-jzb1xf{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;padding:90px 0 50px;text-align:center;}</style><section class="css-jzb1xf"><style data-emotion="css j2kw9x">.css-j2kw9x{margin:0 auto;padding:0 20px;width:100%;max-width:540px;}@media (min-width: 768px) and (max-width: 992px){.css-j2kw9x{max-width:720px;}}@media (min-width: 992px) and (max-width: 1200px){.css-j2kw9x{max-width:960px;}}@media (min-width: 1200px) and (max-width: 1440px){.css-j2kw9x{max-width:1140px;}}@media (min-width: 1440px){.css-j2kw9x{max-width:1320px;}}</style><div class="css-j2kw9x"><style data-emotion="css 1ni4x0x">.css-1ni4x0x{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:50px;text-align:left;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}@media (max-width: 992px){.css-1ni4x0x{grid-template-columns:1fr;text-align:center;}}.css-1ni4x0x >div:first-of-type{-webkit-order:2;-ms-flex-order:2;order:2;}</style><div class="css-1ni4x0x"><style data-emotion="css 1fvj7ms">.css-1fvj7ms{opacity:0.001;-webkit-transform:translateY(20px);-moz-transform:translateY(20px);-ms-transform:translateY(20px);transform:translateY(20px);-webkit-transition:opacity 0.5s,-webkit-transform 0.5s;transition:opacity 0.5s,transform 0.5s;}.css-1fvj7ms.visible{opacity:1;-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);}</style><div class="css-1fvj7ms"><style data-emotion="css aoe81g">@media (max-width: 992px){.css-aoe81g{max-width:490px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;margin:0 auto;}}.css-aoe81g h1{margin-bottom:20px;font-size:80px;line-height:84px;letter-spacing:-1px;}@media (max-width: 1200px){.css-aoe81g h1{font-size:60px;line-height:64px;}}@media (max-width: 576px){.css-aoe81g h1{font-size:50px;line-height:45px;letter-spacing:-0.5px;}}@media (min-width: 992px){.css-aoe81g p{max-width:560px;}}</style><div class="css-aoe81g"><h2><span id="split"> ✂️Split loans</span></h2><p>
+                <div class="service-section split-loans compact">
+                <h5 class="service-title">Split Loans for Separate Buyers</h5>
+                <p class="service-subtitle">Own a property together—keep your finances separate.</p>
+                <p class="service-intro">A split loan (not to be confused with fixed/variable) lets two or more people buy a home together while keeping their loan portions, repayments, and responsibilities separate. Perfect for people in non-traditional arrangements like friends, siblings, or separated couples who want to co-own a property but maintain financial independence.</p>
+                <div class="how-it-works">
+                    <h5 class="section-heading">How It Works</h5>
+                    <p>Each borrower takes out their own individual loan for their share of the property.</p>
+                    <p>You're both on the property title, but each of you has:</p>
+                    <ul class="benefits-list">
+                        <li class="benefit-item">✔️ Your own loan</li>
+                        <li class="benefit-item">✔️ Your own repayment schedule</li>
+                        <li class="benefit-item">✔️ Your own interest rate (can be fixed or variable)</li>
+                        <li class="benefit-item">✔️ Your own responsibility—no joint liability</li>
+                    </ul>
+                </div>
+                <div class="benefits-block">
+                    <h5 class="section-heading">Why People Choose Split Loans</h5>
+                    <ul class="benefits-list">
+                        <li class="benefit-item">✅ Keep your finances independent</li>
+                        <li class="benefit-item">✅ Protect your credit—you're not responsible if the other person misses repayments</li>
+                        <li class="benefit-item">✅ Flexible loan terms—each person can choose what suits them</li>
+                        <li class="benefit-item">✅ Perfect for co-buying with friends, family, or after separation</li>
+                    </ul>
+                </div>
+                <div class="considerations-block">
+                    <h5 class="section-heading">Is This Right for You?</h5>
+                    <ul class="considerations-list">
+                        <li class="consideration-item">Buying a home with someone you're not financially linked to</li>
+                        <li class="consideration-item">Want full control over your own portion of the loan</li>
+                        <li class="consideration-item">Want peace of mind that your credit and repayments are protected</li>
+                    </ul>
+                </div>
+                <div class="cta-block">
+                    <h5 class="section-heading">Let's Make It Easy</h5>
+                    <p class="cta-text">If you're thinking about buying a property with someone else—but want to stay financially independent, this structure might be perfect for you.</p>
+                    <p class="cta-action">Let's talk it through and see if it suits your situation.</p>
+                </div>
+            </div>
+            <style>
+            .split-loans.compact {
+                line-height: 1.4;
+                padding: 1rem;
+                font-family: Arial, sans-serif;
+                color: #333;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
+            .compact .service-title {
+                font-size: 1.3rem;
+                color: #2a6496;
+                margin-bottom: 0.5rem;
+            }
+
+            .compact .service-subtitle {
+                font-weight: bold;
+                margin-bottom: 1rem;
+                color: #555;
+            }
+
+            .compact .service-intro {
+                margin-bottom: 1rem;
+            }
+
+            .compact .section-heading {
+                font-size: 1.1rem;
+                color: #2a6496;
+                margin: 1rem 0 0.5rem;
+            }
+
+            .compact .benefits-list,
+            .compact .considerations-list {
+                list-style: none;
+                padding-left: 0;
+                margin: 0.8rem 0;
+            }
+
+            .compact .benefit-item,
+            .compact .consideration-item {
+                margin-bottom: 0.5rem;
+                padding-left: 1.5rem;
+                position: relative;
+            }
+
+            .compact .consideration-item::before {
+                content: "•";
+                color: #2a6496;
+                font-weight: bold;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+            }
+
+            .compact .cta-text {
+                margin-bottom: 0.5rem;
+            }
+
+            .compact .cta-action {
+                font-weight: bold;
+                color: #2a6496;
+                margin-top: 0.5rem;
+            }
+            #split {
+                scroll-margin-top: 15vh;
+            }
+            </style>
+            </p></div></div><div class="css-1fvj7ms"><style data-emotion="css hdcn7m">.css-hdcn7m{width:100%;position:relative;}.css-hdcn7m::before{content:"";position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%, -50%);-moz-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);transform:translate(-50%, -50%);width:100%;height:100%;border-radius:100%;background:linear-gradient(
+            0deg,
+            var(--tertiary) 100%,
+            var(--primary) 0%
+        );-webkit-filter:blur(50px);filter:blur(50px);opacity:0.3;z-index:-1;}</style><figure class="css-hdcn7m"><style data-emotion="css jlzybf">.css-jlzybf{width:100%;margin-bottom:30px;min-height:450px;object-fit:contain;}@media (max-width: 992px){.css-jlzybf{min-height:auto;}}</style><img src="/_astro/split-loan.oTlKbW9s.png" alt="hero section image" width="300" height="300" class="css-jlzybf"/></figure></div></div></div></section><!--astro:end--></astro-island> <astro-island uid="1jx4lS" prefix="r7" component-url="/_astro/Hero.B3AS900g.js" component-export="Hero" renderer-url="/_astro/client.DhkhUWYr.js" props="{&quot;heroType&quot;:[0,&quot;textImage&quot;],&quot;content&quot;:[0,{&quot;title&quot;:[0,&quot;&lt;span id=\&quot;referrals\&quot;&gt;🛡️ Referrals&lt;/span&gt;&quot;],&quot;paragraph&quot;:[0,&quot;\n                &lt;div class=\&quot;service-section referral-partners compact\&quot;&gt;\n                    &lt;h5 class=\&quot;service-title\&quot;&gt;🤝 What Else Can I Help You With?&lt;/h5&gt;\n                    \n                    &lt;p class=\&quot;service-intro\&quot;&gt;To make your journey easier, I can connect you with trusted referral partners for a range of helpful services. While I can introduce you, I&#39;m unable to provide advice on their specific products or assess their suitability for your personal needs. You&#39;re welcome to explore these providers or choose others that best fit your situation.&lt;/p&gt;\n                    \n                    &lt;div class=\&quot;partners-block\&quot;&gt;\n                        &lt;h5 class=\&quot;section-heading\&quot;&gt;Services available through my referral partners:&lt;/h5&gt;\n                        &lt;ul class=\&quot;partners-list\&quot;&gt;\n                            &lt;li class=\&quot;partner-item\&quot;&gt;🏠 Tower – Fire &amp; General Insurance&lt;/li&gt;\n                            &lt;li class=\&quot;partner-item\&quot;&gt;🔒 Initio – Fire &amp; General Insurance&lt;/li&gt;\n                            &lt;li class=\&quot;partner-item\&quot;&gt;🚗 Asset Finance – For vehicles, equipment, and more&lt;/li&gt;\n                            &lt;li class=\&quot;partner-item\&quot;&gt;💼 Kōura Wealth – KiwiSaver &amp; Investment advice&lt;/li&gt;\n                            &lt;li class=\&quot;partner-item\&quot;&gt;💰 UK Pension Transfers – Bringing your pension to NZ&lt;/li&gt;\n                            &lt;li class=\&quot;partner-item\&quot;&gt;💱 XE Money – International money transfers&lt;/li&gt;\n                            &lt;li class=\&quot;partner-item\&quot;&gt;⚡ FastConnect – Utility connection services for your move&lt;/li&gt;\n                        &lt;/ul&gt;\n                    &lt;/div&gt;\n                &lt;/div&gt;\n\n            &lt;style&gt;\n            .referral-partners.compact {\n                line-height: 1.4;\n                padding: 1rem;\n                font-family: Arial, sans-serif;\n                color: #333;\n                max-width: 800px;\n                margin: 0 auto;\n            }\n\n            .compact .service-title {\n                font-size: 1.3rem;\n                color: #2a6496;\n                margin-bottom: 0.8rem;\n            }\n\n            .compact .service-intro {\n                margin-bottom: 1.2rem;\n            }\n\n            .compact .section-heading {\n                font-size: 1.1rem;\n                color: #2a6496;\n                margin: 1rem 0 0.8rem;\n            }\n\n            .compact .partners-list {\n                list-style: none;\n                padding-left: 0;\n                margin: 0.8rem 0;\n            }\n\n            .compact .partner-item {\n                margin-bottom: 0.6rem;\n                padding-left: 1.8rem;\n                position: relative;\n                line-height: 1.5;\n            }\n\n            .compact .partner-item::before {\n                content: \&quot;•\&quot;;\n                color: #2a6496;\n                font-weight: bold;\n                display: inline-block;\n                width: 1em;\n                margin-left: -1em;\n                position: absolute;\n                left: 0;\n            }\n            #referrals {\n                scroll-margin-top: 15vh;\n            }\n            &lt;/style&gt;\n            &quot;],&quot;image&quot;:[0,{&quot;srcLocal&quot;:[0,&quot;referral&quot;],&quot;alt&quot;:[0,&quot;hero section image&quot;],&quot;width&quot;:[0,300],&quot;height&quot;:[0,300]}]}]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;Hero&quot;,&quot;value&quot;:true}" await-children=""><style data-emotion="css jzb1xf">.css-jzb1xf{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;padding:90px 0 50px;text-align:center;}</style><section class="css-jzb1xf"><style data-emotion="css j2kw9x">.css-j2kw9x{margin:0 auto;padding:0 20px;width:100%;max-width:540px;}@media (min-width: 768px) and (max-width: 992px){.css-j2kw9x{max-width:720px;}}@media (min-width: 992px) and (max-width: 1200px){.css-j2kw9x{max-width:960px;}}@media (min-width: 1200px) and (max-width: 1440px){.css-j2kw9x{max-width:1140px;}}@media (min-width: 1440px){.css-j2kw9x{max-width:1320px;}}</style><div class="css-j2kw9x"><style data-emotion="css jc7l3c">.css-jc7l3c{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:50px;text-align:left;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}@media (max-width: 992px){.css-jc7l3c{grid-template-columns:1fr;text-align:center;}}</style><div class="css-jc7l3c"><style data-emotion="css 1fvj7ms">.css-1fvj7ms{opacity:0.001;-webkit-transform:translateY(20px);-moz-transform:translateY(20px);-ms-transform:translateY(20px);transform:translateY(20px);-webkit-transition:opacity 0.5s,-webkit-transform 0.5s;transition:opacity 0.5s,transform 0.5s;}.css-1fvj7ms.visible{opacity:1;-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);}</style><div class="css-1fvj7ms"><style data-emotion="css aoe81g">@media (max-width: 992px){.css-aoe81g{max-width:490px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;margin:0 auto;}}.css-aoe81g h1{margin-bottom:20px;font-size:80px;line-height:84px;letter-spacing:-1px;}@media (max-width: 1200px){.css-aoe81g h1{font-size:60px;line-height:64px;}}@media (max-width: 576px){.css-aoe81g h1{font-size:50px;line-height:45px;letter-spacing:-0.5px;}}@media (min-width: 992px){.css-aoe81g p{max-width:560px;}}</style><div class="css-aoe81g"><h2><span id="referrals">🛡️ Referrals</span></h2><p>
+                <div class="service-section referral-partners compact">
+                    <h5 class="service-title">🤝 What Else Can I Help You With?</h5>
+                    
+                    <p class="service-intro">To make your journey easier, I can connect you with trusted referral partners for a range of helpful services. While I can introduce you, I'm unable to provide advice on their specific products or assess their suitability for your personal needs. You're welcome to explore these providers or choose others that best fit your situation.</p>
+                    
+                    <div class="partners-block">
+                        <h5 class="section-heading">Services available through my referral partners:</h5>
+                        <ul class="partners-list">
+                            <li class="partner-item">🏠 Tower – Fire & General Insurance</li>
+                            <li class="partner-item">🔒 Initio – Fire & General Insurance</li>
+                            <li class="partner-item">🚗 Asset Finance – For vehicles, equipment, and more</li>
+                            <li class="partner-item">💼 Kōura Wealth – KiwiSaver & Investment advice</li>
+                            <li class="partner-item">💰 UK Pension Transfers – Bringing your pension to NZ</li>
+                            <li class="partner-item">💱 XE Money – International money transfers</li>
+                            <li class="partner-item">⚡ FastConnect – Utility connection services for your move</li>
+                        </ul>
+                    </div>
+                </div>
+
+            <style>
+            .referral-partners.compact {
+                line-height: 1.4;
+                padding: 1rem;
+                font-family: Arial, sans-serif;
+                color: #333;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
+            .compact .service-title {
+                font-size: 1.3rem;
+                color: #2a6496;
+                margin-bottom: 0.8rem;
+            }
+
+            .compact .service-intro {
+                margin-bottom: 1.2rem;
+            }
+
+            .compact .section-heading {
+                font-size: 1.1rem;
+                color: #2a6496;
+                margin: 1rem 0 0.8rem;
+            }
+
+            .compact .partners-list {
+                list-style: none;
+                padding-left: 0;
+                margin: 0.8rem 0;
+            }
+
+            .compact .partner-item {
+                margin-bottom: 0.6rem;
+                padding-left: 1.8rem;
+                position: relative;
+                line-height: 1.5;
+            }
+
+            .compact .partner-item::before {
+                content: "•";
+                color: #2a6496;
+                font-weight: bold;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+                position: absolute;
+                left: 0;
+            }
+            #referrals {
+                scroll-margin-top: 15vh;
+            }
+            </style>
+            </p></div></div><div class="css-1fvj7ms"><style data-emotion="css hdcn7m">.css-hdcn7m{width:100%;position:relative;}.css-hdcn7m::before{content:"";position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%, -50%);-moz-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);transform:translate(-50%, -50%);width:100%;height:100%;border-radius:100%;background:linear-gradient(
+            0deg,
+            var(--tertiary) 100%,
+            var(--primary) 0%
+        );-webkit-filter:blur(50px);filter:blur(50px);opacity:0.3;z-index:-1;}</style><figure class="css-hdcn7m"><style data-emotion="css jlzybf">.css-jlzybf{width:100%;margin-bottom:30px;min-height:450px;object-fit:contain;}@media (max-width: 992px){.css-jlzybf{min-height:auto;}}</style><img src="/_astro/referral.DtRc6TbZ.png" alt="hero section image" width="300" height="300" class="css-jlzybf"/></figure></div></div></div></section><!--astro:end--></astro-island> <astro-island uid="27hu6m" prefix="r8" component-url="/_astro/Contact.D3UM3BBE.js" component-export="Contact" renderer-url="/_astro/client.DhkhUWYr.js" props="{}" ssr="" client="load" opts="{&quot;name&quot;:&quot;Contact&quot;,&quot;value&quot;:true}" await-children=""><style data-emotion="css 1px1rkh">.css-1px1rkh{padding:100px 0;}@media (max-width: 992px){.css-1px1rkh{padding:60px 0;}}</style><section class="css-1px1rkh"><style data-emotion="css f9ab53">@media (min-width: 1920px){.css-f9ab53{max-width:920px;}}</style><style data-emotion="css xhon2r">.css-xhon2r{margin:0 auto;padding:0 20px;width:100%;max-width:540px;}@media (min-width: 768px) and (max-width: 992px){.css-xhon2r{max-width:720px;}}@media (min-width: 992px) and (max-width: 1200px){.css-xhon2r{max-width:960px;}}@media (min-width: 1200px) and (max-width: 1440px){.css-xhon2r{max-width:1140px;}}@media (min-width: 1440px){.css-xhon2r{max-width:1320px;}}@media (min-width: 1920px){.css-xhon2r{max-width:920px;}}</style><div class="css-xhon2r"><style data-emotion="css 1fvj7ms">.css-1fvj7ms{opacity:0.001;-webkit-transform:translateY(20px);-moz-transform:translateY(20px);-ms-transform:translateY(20px);transform:translateY(20px);-webkit-transition:opacity 0.5s,-webkit-transform 0.5s;transition:opacity 0.5s,transform 0.5s;}.css-1fvj7ms.visible{opacity:1;-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);}</style><div class="css-1fvj7ms"><style data-emotion="css pgmyfn">.css-pgmyfn{padding:30px;background:var(--bg-element);border-radius:10px;box-shadow:0 0 30px rgba(0, 0, 0, 0.1);width:100%;}.css-pgmyfn h2{font-size:30px;line-height:36px;font-weight:300;margin-bottom:10px;}@media (max-width: 992px){.css-pgmyfn h2{font-size:20px;line-height:25px;}}.css-pgmyfn p{opacity:0.8;}@media (max-width: 992px){.css-pgmyfn p{font-size:14px;line-height:16px;}}</style><form class="css-pgmyfn"><h2>Please complete the form below.<!-- --> <b>Let&#x27;s talk!</b></h2><p>change API links to your own service to make it work (whole script is setup correctly just change API links)</p><div class="css-0"><style data-emotion="css 4uldz8">.css-4uldz8{padding:10px 0;border:none;width:100%;margin-bottom:10px;box-sizing:border-box;background:transparent;border-bottom:1px solid var(--text-secondary);-webkit-transition:border-color 0.3s;transition:border-color 0.3s;letter-spacing:1px;color:var(--text-default);margin:30px 0;}@media (max-width: 992px){.css-4uldz8{margin-bottom:0;}}.css-4uldz8:focus,.css-4uldz8:active{outline:none;border-color:var(--tertiary);}.css-4uldz8::-webkit-input-placeholder{color:var(--text-secondary);}.css-4uldz8::-moz-placeholder{color:var(--text-secondary);}.css-4uldz8:-ms-input-placeholder{color:var(--text-secondary);}.css-4uldz8::placeholder{color:var(--text-secondary);}</style><input placeholder="Name *" name="name" class="css-4uldz8"/></div><div class="css-0"><input placeholder="Email *" name="email" class="css-4uldz8"/></div><div class="css-0"><input placeholder="Mobile Number *" name="email" class="css-4uldz8"/></div><div class="css-0"><style data-emotion="css 1rsvu89">.css-1rsvu89{padding:10px 0;border:none;width:100%;margin-bottom:10px;box-sizing:border-box;background:transparent;border-bottom:1px solid var(--text-secondary);-webkit-transition:border-color 0.3s;transition:border-color 0.3s;letter-spacing:1px;color:var(--text-default);margin:30px 0;resize:none;min-height:90px;}@media (max-width: 992px){.css-1rsvu89{margin-bottom:0;}}.css-1rsvu89:focus,.css-1rsvu89:active{outline:none;border-color:var(--tertiary);}.css-1rsvu89::-webkit-input-placeholder{color:var(--text-secondary);}.css-1rsvu89::-moz-placeholder{color:var(--text-secondary);}.css-1rsvu89:-ms-input-placeholder{color:var(--text-secondary);}.css-1rsvu89::placeholder{color:var(--text-secondary);}</style><textarea placeholder="Message *" name="message" class="css-1rsvu89"></textarea></div><style data-emotion="css lj8v60">.css-lj8v60{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-ms-flex-pack:start;-webkit-justify-content:flex-start;justify-content:flex-start;margin-top:20px;}</style><div class="css-lj8v60"><style data-emotion="css 19siiih">.css-19siiih{text-transform:uppercase;-webkit-transition:0.3s;transition:0.3s;cursor:pointer;-webkit-text-decoration:none;text-decoration:none;display:inline-block;text-align:center;padding:12px 40px;min-width:150px;border:1.5px solid var(--tertiary);font-size:16px;line-height:20px;letter-spacing:1px;font-weight:500;border-radius:50px;background:var(--tertiary);color:var(--primary);}.css-19siiih:hover{background:transparent;color:var(--tertiary);}</style><button class="css-19siiih">Submit</button></div></form></div><style data-emotion="css 1qmje22">.css-1qmje22{margin:40px 0;}</style><div class="css-1qmje22"><div class="css-1fvj7ms"><h2>Send via email</h2><style data-emotion="css aa4rx6">.css-aa4rx6{padding:30px;border-radius:10px;background:var(--bg-element);display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;height:100%;position:relative;}.css-aa4rx6::before{content:"";position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%, -50%);-moz-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);transform:translate(-50%, -50%);width:100%;height:100%;background:linear-gradient(
+            0deg,
+            var(--tertiary) 100%,
+            var(--primary) 0%
+        );-webkit-filter:blur(30px);filter:blur(30px);opacity:0.1;z-index:-1;-webkit-transition:0.3s opacity;transition:0.3s opacity;}.css-aa4rx6:hover:before{opacity:0.6;}.css-aa4rx6:hover img[data-icon="true"]{-webkit-transform:translate(10px, -10px) scale(1.1);-moz-transform:translate(10px, -10px) scale(1.1);-ms-transform:translate(10px, -10px) scale(1.1);transform:translate(10px, -10px) scale(1.1);}</style><a href="mailto:youremgail@gmail.com" target="_blank" class="css-aa4rx6"><style data-emotion="css 17y0g26">.css-17y0g26{position:relative;z-index:2;}@media (max-width: 768px){.css-17y0g26{max-width:80%;}}</style><div class="css-17y0g26">
+                            <h3>Click to send email</h3>
+                            <p>
+                                Feel free to send us an email if you have any
+                                questions
+                            </p>
+                            </div><style data-emotion="css 1g44tiq">.css-1g44tiq{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;-webkit-justify-content:flex-end;justify-content:flex-end;-webkit-align-items:flex-end;-webkit-box-align:flex-end;-ms-flex-align:flex-end;align-items:flex-end;width:100%;}</style><figure class="css-1g44tiq"><style data-emotion="css qvg7uo">.css-qvg7uo{-webkit-transition:-webkit-transform 0.3s;transition:transform 0.3s;}</style><img src="/_astro/icon-arrow-circle.BnhBksj8.svg" alt="arrow" width="50" height="50" data-icon="true" class="css-qvg7uo"/></figure></a></div></div><div class="css-1qmje22"><div class="css-1fvj7ms"><div style="height:450px;width:100%"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5993.129031253087!2d174.7920309768587!3d-41.318336442343224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38afe516f5c693%3A0x8d3620342949483f!2sBozinoff%20Mortgages!5e0!3m2!1sen!2snz!4v1747480496543!5m2!1sen!2snz" width="100%" height="450" frameBorder="0" style="border:0" aria-hidden="false" tabindex="0" title="Wellington Map"></iframe></div></div></div></div></section><!--astro:end--></astro-island> </main>  <script>(()=>{var l=(s,i,o)=>{let r=async()=>{await(await s())()},t=typeof i.value=="object"?i.value:void 0,c={rootMargin:t==null?void 0:t.rootMargin},n=new IntersectionObserver(e=>{for(let a of e)if(a.isIntersecting){n.disconnect(),r();break}},c);for(let e of o.children)n.observe(e)};(self.Astro||(self.Astro={})).visible=l;window.dispatchEvent(new Event("astro:visible"));})();</script><astro-island uid="Z18UPhR" prefix="r11" component-url="/_astro/Footer.BaQKaveN.js" component-export="Footer" renderer-url="/_astro/client.DhkhUWYr.js" props="{}" ssr="" client="visible" opts="{&quot;name&quot;:&quot;Footer&quot;,&quot;value&quot;:true}" await-children=""><style data-emotion="css 102kqrr">.css-102kqrr{width:100%;background:var(--bg-element);box-shadow:0 0 10px rgb(123 123 123 / 10%);padding:0 0 50px;margin-top:200px;}@media (max-width: 992px){.css-102kqrr{margin-top:100px;}}</style><footer class="css-102kqrr"><style data-emotion="css j2kw9x">.css-j2kw9x{margin:0 auto;padding:0 20px;width:100%;max-width:540px;}@media (min-width: 768px) and (max-width: 992px){.css-j2kw9x{max-width:720px;}}@media (min-width: 992px) and (max-width: 1200px){.css-j2kw9x{max-width:960px;}}@media (min-width: 1200px) and (max-width: 1440px){.css-j2kw9x{max-width:1140px;}}@media (min-width: 1440px){.css-j2kw9x{max-width:1320px;}}</style><div class="css-j2kw9x"><style data-emotion="css ihtn9n">.css-ihtn9n{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;}@media (max-width: 992px){.css-ihtn9n{-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;gap:20px;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}}</style><div class="css-ihtn9n"><style data-emotion="css pxexir">.css-pxexir{position:relative;z-index:3;}.css-pxexir a{font-size:35px;line-height:30px;font-weight:700;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;position:relative;}.css-pxexir a span:after{content:"";position:absolute;bottom:-5px;left:0;width:25%;height:3px;background-color:var(--primary);z-index:1;-webkit-transition:width 0.2s linear;transition:width 0.2s linear;}.css-pxexir a:hover span:after{width:100%;}.css-pxexir a img{height:63px;width:150px;object-fit:contain;}</style><div class="css-pxexir"><a href="/"><img src="/_astro/logo.CIy3CyIk.webp" alt="logo" width="1500" height="643"/></a></div><style data-emotion="css cyrj8c">.css-cyrj8c{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:20px;}@media (max-width: 992px){.css-cyrj8c{-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;text-align:center;}}.css-cyrj8c p{margin:0;}</style><div class="css-cyrj8c"><p>© 2025 All rights reserved by AQ Mortgages Limited, Mihali Enterprises Limited trading as Bozinoff Mortgages</p></div><style data-emotion="css 13ka6wx">.css-13ka6wx{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:20px;margin:20px 0 0;}</style><div class="css-13ka6wx"><style data-emotion="css 16cws5f">.css-16cws5f{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;gap:10px;list-style-type:none;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;padding:0;margin:0;}</style><ul class="css-16cws5f"><style data-emotion="css sampjy">.css-sampjy{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;border-radius:50%;cursor:pointer;-webkit-transition:0.3s;transition:0.3s;opacity:0.5;}.css-sampjy:hover{opacity:1;}.css-sampjy:not(:last-of-type):after{content:"";display:block;width:1px;height:20px;background-color:var(--text-secondary);margin:0 10px;}</style><li class="css-sampjy"><style data-emotion="css 11sj842">.css-11sj842{-webkit-text-decoration:none;text-decoration:none;color:inherit;}.css-11sj842 img{width:20px;height:20px;aspect-ratio:20/20;object-fit:contain;}</style><a href="https://www.facebook.com" target="_blank" rel="noreferrer" class="css-11sj842"><img src="/_astro/icon-facebook.B6g6NxN2.svg" alt="facebook" width="15" height="32" data-icon="true"/></a></li><li class="css-sampjy"><a href="https://www.linkedin.com" target="_blank" rel="noreferrer" class="css-11sj842"><img src="/_astro/icon-linkedin.siGonwwC.svg" alt="linkedin" width="50" height="50" data-icon="true"/></a></li></ul></div></div></div></footer><!--astro:end--></astro-island> </body></html>

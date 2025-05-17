@@ -1,0 +1,805 @@
+---
+import { Hero } from "@modules/Hero";
+import Layout from "../layouts/Layout.astro";
+import { LogosSlider } from "@modules/LogosSlider";
+
+import { FadeIn } from "@utils/animations/FadeIn";
+import { Button } from "@components/Button";
+import { Icon } from "@static/icons";
+import { Contact } from "@modules/Contact";
+---
+
+<Layout
+    title="Agency Aestro | Offers"
+    description="YOUR META DESCRIPTION FOR SEO"
+>
+    <main class="page-content">
+        <Hero heroType="center" client:load>
+            <FadeIn delay={0.2} client:load>
+                <h1>What we offer?</h1>
+                <p></p>
+            </FadeIn>
+            <FadeIn delay={0.3} client:load>
+                <Button link="/contact" variant="secondary">
+                    Contact us
+                </Button>
+            </FadeIn>
+            <FadeIn client:load delay={0.4}>
+                <div class="icon-wrapper">
+                    <Icon iconData="arrowDown" alt="arrow down icon" />
+                </div>
+            </FadeIn>
+        </Hero>
+        <!-- <LogosSlider client:load /> -->
+        <Hero
+            heroType="textImage"
+            client:load
+            content={{
+                title: `<span id="firsthome">✅First Home Buyers</span>`,
+                paragraph: `
+                <div class="service-section first-home-buyers compact">
+                    <h5 class="service-title">Buying your first home? Let me make it easy for you.</h5>
+                    
+                    <p class="service-intro">I know buying your first home can feel overwhelming. Dealing with agents, lawyers, valuers, banks, and insurance companies is a lot — but you don't have to do it alone.</p>
+                    
+                    <div class="benefits-block">
+                        <h5 class="section-heading">Here's how I can help:</h5>
+                        <ul class="benefits-list">
+                            <li class="benefit-item">
+                                <span class="check-icon">✅</span> I'll arrange pre-approval, so you know exactly how much you can spend.
+                            </li>
+                            <li class="benefit-item">
+                                <span class="check-icon">✅</span> I'll support you from offer to settlement — every step of the way.
+                            </li>
+                            <li class="benefit-item">
+                                <span class="check-icon">✅</span> I'll help you choose the right lender and loan structure.
+                            </li>
+                            <li class="benefit-item">
+                                <span class="check-icon">✅</span> I'll negotiate a great interest rate and cash contribution for you.
+                            </li>
+                            <li class="benefit-item">
+                                <span class="check-icon">✅</span> And best of all — my service is free when you take a loan with a main bank!
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="concerns-block">
+                        <h5 class="section-heading">Worried about something?</h5>
+                        <ul class="concerns-list">
+                            <li class="concern-item">Not sure if you have enough deposit?</li>
+                            <li class="concern-item">Concerned about income or credit history?</li>
+                            <li class="concern-item">Not a NZ resident yet?</li>
+                        </ul>
+                        <p class="reassurance">No problem — I'll answer all your questions and help find the best solution for you.</p>
+                    </div>
+                    
+                    <div class="cta-block">
+                        <h5 class="section-heading">Want to chat?</h5>
+                        <p class="cta-text">Let's grab a coffee and talk about how I can help you buy your first home.</p>
+                        <p class="cta-action">Just enter your details below and I'll be in touch!</p>
+                    </div>
+                </div>
+
+                <style>
+                .first-home-buyers.compact {
+                    line-height: 1.4;
+                    padding: 1rem;
+                }
+
+                .compact .service-title {
+                    margin-bottom: 0.5rem;
+                    font-size: 1.3rem;
+                }
+
+                .compact .service-intro {
+                    margin-bottom: 1rem;
+                }
+
+                .compact .section-heading {
+                    margin: 1rem 0 0.5rem;
+                }
+
+                .compact .benefits-list {
+                    margin: 0.8rem 0;
+                }
+
+                .compact .benefit-item {
+                    margin-bottom: 0.5rem;
+                    padding-left: 1.5rem;
+                }
+
+                .compact .concerns-list {
+                    margin: 0.8rem 0;
+                }
+
+                .compact .reassurance {
+                    margin: 0.8rem 0;
+                }
+
+                .compact .cta-text {
+                    margin-bottom: 0.3rem;
+                }
+
+                .compact .cta-action {
+                    margin-top: 0.5rem;
+                }
+                #firsthome {
+                scroll-margin-top: 15vh;
+                }
+                </style>
+                `,
+                image: {
+                    srcLocal: "firstHomeBuyer",
+                    alt: "hero section image",
+                    width: 300,
+                    height: 300,
+                },
+            }}
+        />
+        <Hero
+            heroType="textImage"
+            client:load
+            content={{
+                switchPlaces: true,
+                title: `<span id="refinancing">🔁Refinancing & Refixing</span>`,
+                paragraph: `
+                <div class="service-section refinancing compact">
+                    <h5 class="service-title">🏡 Thinking About Refinancing? Let's Make It Easy.</h5>
+                    
+                    <p class="service-intro">Are you on a floating interest rate or is your fixed rate coming up for renewal? Wanting to refinance or top up your home loan for a new car, holiday, or renovation?</p>
+                    
+                    <div class="benefits-block">
+                        <ul class="benefits-list">
+                            <li class="benefit-item">
+                                <span class="check-icon">✅</span> I can help you lock in record low discounted rates – fast and easy.
+                            </li>
+                            <li class="benefit-item">
+                                <span class="check-icon">✅</span> I'll guide you through the process and make sure it's worth your while.
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="reasons-block">
+                        <h5 class="section-heading">📈 Why Do Refinance?</h5>
+                        <p>Many people refinance their mortgage to:</p>
+                        <ul class="reasons-list">
+                            <li class="reason-item">🔄 Consolidate debt</li>
+                            <li class="reason-item">🛠️ Renovate or invest</li>
+                            <li class="reason-item">💰 Access equity in their property</li>
+                            <li class="reason-item">📉 Secure a better home loan interest rate</li>
+                            <li class="reason-item">🔄 Move between fixed and variable rates</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="considerations-block">
+                        <h5 class="section-heading">🤔 What Should You Consider?</h5>
+                        <p>Before making the move, it's important to weigh the costs vs long-term benefits. I'll help you do the sums. Let's consider:</p>
+                        <ul class="considerations-list">
+                            <li class="consideration-item">❗ Exit or deferred establishment fees on your current loan</li>
+                            <li class="consideration-item">💸 Establishment fees on your new loan — are there any special deals?</li>
+                            <li class="consideration-item">📉 What happens to repayments after fixed or honeymoon rates expire?</li>
+                            <li class="consideration-item">🧮 Whether you have enough equity if you're topping up</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="cta-block">
+                        <h5 class="section-heading">☕ Let's Catch Up</h5>
+                        <p class="cta-text">If you'd like to meet for a coffee and talk about how I can help you achieve your goals or reach financial freedom, just enter your details below and I'll be in touch.</p>
+                        <p class="cta-action">Refinancing doesn't have to be hard — I'll make it easy.</p>
+                    </div>
+                </div>
+
+                <style>
+                .refinancing.compact {
+                    line-height: 1.4;
+                    padding: 1rem;
+                }
+
+                .compact .service-title {
+                    margin-bottom: 0.5rem;
+                    font-size: 1.3rem;
+                }
+
+                .compact .service-intro {
+                    margin-bottom: 1rem;
+                }
+
+                .compact .section-heading {
+                    margin: 1rem 0 0.5rem;
+                }
+
+                .compact .benefits-list,
+                .compact .reasons-list,
+                .compact .considerations-list {
+                    margin: 0.8rem 0;
+                    padding-left: 1rem;
+                }
+
+                .compact .benefit-item,
+                .compact .reason-item,
+                .compact .consideration-item {
+                    margin-bottom: 0.5rem;
+                    padding-left: 1.5rem;
+                }
+
+                .compact .cta-text {
+                    margin-bottom: 0.3rem;
+                }
+
+                .compact .cta-action {
+                    margin-top: 0.5rem;
+                    font-weight: 600;
+                }
+                #refinancing {
+                scroll-margin-top: 15vh;
+                }
+                </style>
+                `,
+                image: {
+                    srcLocal: "refinance",
+                    alt: "hero section image",
+                    width: 300,
+                    height: 300,
+                },
+            }}
+        />
+
+        <Hero
+            heroType="textImage"
+            client:load
+            content={{
+                title: `<span id="construction">🏡Construction Loans</span>`,
+                paragraph: `<div class="service-section construction-loans compact">
+                <h5 class="service-title">🏡 Building Your Dream Home? I Can Help!</h5>
+                <p class="service-subtitle">Construction Loans & House + Land Packages</p>
+                
+                <p class="service-intro">Whether you're buying land, building from scratch, or going for a turn-key package — I'm here to guide you every step of the way.</p>
+                
+                <div class="loan-types">
+                    <div class="loan-block">
+                        <h5 class="section-heading">🔨 Construction Loans – How It Works:</h5>
+                        <ul class="benefits-list">
+                            <li class="benefit-item">✅ Only 10% deposit needed for owner-occupied</li>
+                            <li class="benefit-item">✅ 20% deposit for investors</li>
+                            <li class="benefit-item">✅ Interest-only repayments during the build</li>
+                            <li class="benefit-item">✅ Pay interest only on what you've used</li>
+                            <li class="benefit-item">✅ Turn your plans into reality — stage by stage</li>
+                            <li class="benefit-item">✅ I'll help you get all the right paperwork (Sale & Purchase + Fixed Price Build Contract)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="land-block">
+                        <h5 class="section-heading">📍 Buying Land Only?</h5>
+                        <p>You'll need a minimum 20% deposit — I can help you get approved.</p>
+                    </div>
+                    
+                    <div class="turnkey-block">
+                        <h5 class="section-heading">🚪 Turn-Key Homes – Hassle-Free!</h5>
+                        <p>Prefer a ready-to-move-in option?</p>
+                        <ul class="benefits-list">
+                            <li class="benefit-item">✅ Fixed-price, no surprises</li>
+                            <li class="benefit-item">✅ Just a 10% deposit, balance on completion</li>
+                            <li class="benefit-item">✅ No loan repayments during the build</li>
+                            <li class="benefit-item">✅ Pay mortgage only when the home is ready</li>
+                            <li class="benefit-item">✅ Fewer conditions = faster approval</li>
+                        </ul>
+                        <p class="warning-note">⚠️ Keep in mind: Turn-key approvals usually expire after 12 months — let's get it right from the start!</p>
+                    </div>
+                </div>
+                
+                <div class="cta-block">
+                    <h5 class="section-heading">💬 Let's Talk Over Coffee</h5>
+                    <p class="cta-text">Let me show you how you can do.</p>
+                    <ul class="benefits-list compact">
+                        <li class="benefit-item">✅ Custom finance solutions</li>
+                        <li class="benefit-item">✅ Support from start to finish</li>
+                    </ul>
+                    <p class="cta-action">📞 Call or message me today and let's get building!</p>
+                </div>
+            </div>
+
+            <style>
+            .construction-loans.compact {
+                line-height: 1.4;
+                padding: 1rem;
+                font-family: Arial, sans-serif;
+                color: #333;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
+            .compact .service-title {
+                font-size: 1.3rem;
+                color: #2a6496;
+                margin-bottom: 0.5rem;
+            }
+
+            .compact .service-subtitle {
+                font-weight: bold;
+                margin-bottom: 1rem;
+                color: #555;
+            }
+
+            .compact .service-intro {
+                margin-bottom: 1rem;
+            }
+
+            .compact .section-heading {
+                font-size: 1.1rem;
+                color: #2a6496;
+                margin: 1rem 0 0.5rem;
+            }
+
+            .compact .benefits-list {
+                list-style: none;
+                padding-left: 0;
+                margin: 0.8rem 0;
+            }
+
+            .compact .benefit-item {
+                margin-bottom: 0.5rem;
+                padding-left: 1.5rem;
+                position: relative;
+            }
+
+            .compact .warning-note {
+                font-style: italic;
+                color: #d35400;
+                margin: 0.8rem 0;
+            }
+
+            .compact .cta-text {
+                margin-bottom: 0.8rem;
+            }
+
+            .compact .cta-action {
+                font-weight: bold;
+                color: #2a6496;
+                margin-top: 0.5rem;
+            }
+
+            .loan-block,
+            .land-block,
+            .turnkey-block {
+                margin-bottom: 1.2rem;
+            }
+            #construction {
+                scroll-margin-top: 15vh;
+            }
+            </style>`,
+                image: {
+                    srcLocal: "constructionLoan",
+                    alt: "hero section image",
+                    width: 300,
+                    height: 300,
+                },
+            }}
+        />
+        <Hero
+            heroType="textImage"
+            client:load
+            content={{
+                switchPlaces: true,
+                title: `<span id="investment">📈 Investment Properties</span>`,
+                paragraph: `<div class="service-section investment-property compact">
+                    <h5 class="service-title">🏠 Investment Property & Rentals</h5>
+                    <p class="service-subtitle">Looking to buy a rental or investment property? I can help.</p>
+                    
+                    <p class="service-intro">Right now, banks usually require a 30% deposit for investment properties (they'll lend up to 70%). But that doesn't mean you need to come up with the deposit in cash.</p>
+                    
+                    <div class="benefits-block">
+                        <h5 class="section-heading">Here's how I can help:</h5>
+                        <ul class="benefits-list">
+                            <li class="benefit-item">✅ I'll review your current properties to see if you can use existing equity — without using your own money.</li>
+                            <li class="benefit-item">✅ I'll structure the loan to avoid cross-collateralisation, so your properties stay as separate as possible.</li>
+                            <li class="benefit-item">✅ I'll make sure the bank only takes as much security as they actually need — no more.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="cta-block">
+                        <p class="cta-text">Let's make it easy.</p>
+                        <p class="cta-question">Want to chat about how you can grow your investment portfolio without stress?</p>
+                        <p class="cta-action">Let's meet for a coffee — just enter your details below and I'll be in touch!</p>
+                    </div>
+                </div>
+
+                <style>
+                .investment-property.compact {
+                    line-height: 1.4;
+                    padding: 1rem;
+                    font-family: Arial, sans-serif;
+                    color: #333;
+                    max-width: 800px;
+                    margin: 0 auto;
+                }
+
+                .compact .service-title {
+                    font-size: 1.3rem;
+                    color: #2a6496;
+                    margin-bottom: 0.5rem;
+                }
+
+                .compact .service-subtitle {
+                    font-weight: bold;
+                    margin-bottom: 1rem;
+                    color: #555;
+                }
+
+                .compact .service-intro {
+                    margin-bottom: 1rem;
+                }
+
+                .compact .section-heading {
+                    font-size: 1.1rem;
+                    color: #2a6496;
+                    margin: 1rem 0 0.5rem;
+                }
+
+                .compact .benefits-list {
+                    list-style: none;
+                    padding-left: 0;
+                    margin: 0.8rem 0;
+                }
+
+                .compact .benefit-item {
+                    margin-bottom: 0.5rem;
+                    padding-left: 1.5rem;
+                    position: relative;
+                }
+
+                .compact .cta-text {
+                    font-weight: bold;
+                    margin: 1rem 0 0.5rem;
+                }
+
+                .compact .cta-question {
+                    margin-bottom: 0.5rem;
+                    font-style: italic;
+                }
+
+                .compact .cta-action {
+                    font-weight: bold;
+                    color: #2a6496;
+                    margin-top: 0.5rem;
+                }
+                #investment {
+                   scroll-margin-top: 15vh;
+                }
+                </style>`,
+                image: {
+                    srcLocal: "investment",
+                    alt: "hero section image",
+                    width: 300,
+                    height: 300,
+                },
+            }}
+        />
+        <Hero
+            heroType="textImage"
+            client:load
+            content={{
+                title: `<span id="bridging">🌉Bridging Loans Made Easy</span>`,
+                paragraph: `
+                <div class="service-section bridging-loan compact">
+                    <h5 class="service-title"> Want to buy before you sell?</h5>
+                    <p class="service-intro">A bridging loan can help you secure your next home before your current one is sold.</p>
+                    
+                    <div class="explanation-block">
+                        <h5 class="section-heading">What is a Bridging Loan?</h5>
+                        <p>It's a short-term loan that "bridges the gap" between buying your new home and selling your current one. Your lender will take security over both properties until the process is complete.</p>
+                        <ul class="benefits-list">
+                            <li class="benefit-item">✅ Interest-only repayments during the bridging period</li>
+                            <li class="benefit-item">✅ Access up to 100% of your new property's value (plus fees)</li>
+                            <li class="benefit-item">✅ Capitalise the interest so you don't make repayments until your current home sells</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="benefits-block">
+                        <h5 class="section-heading">Why Consider It?</h5>
+                        <ul class="benefits-list">
+                            <li class="benefit-item">🏡 You can move quickly on a new home</li>
+                            <li class="benefit-item">🛠️ Build your dream home while living in your current one</li>
+                            <li class="benefit-item">⏳ Up to 6 months to sell (or 12 months if you're building)</li>
+                            <li class="benefit-item">💡 Loan automatically switches to a standard mortgage after sale</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="considerations-block">
+                        <h5 class="section-heading">Key Things to Think About</h5>
+                        <ul class="considerations-list">
+                            <li class="consideration-item">Do you have an offer on your current home?</li>
+                            <li class="consideration-item">Are you buying or building?</li>
+                            <li class="consideration-item">Will you live in the new property or rent it out?</li>
+                            <li class="consideration-item">Can you afford to service both loans during the transition?</li>
+                        </ul>
+                        <p class="reassurance">Let's work out the best fit for you and minimise risk.</p>
+                    </div>
+                    
+                    <div class="capitalised-block">
+                        <h5 class="section-heading">Capitalised Interest Bridging Loans</h5>
+                        <ul class="benefits-list">
+                            <li class="benefit-item">✔ No repayments on the new loan during the transition</li>
+                            <li class="benefit-item">✔ Interest builds into your loan instead of being paid monthly</li>
+                            <li class="benefit-item">✔ Gives you breathing room to sell at the right time</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="cta-block">
+                        <h5 class="section-heading">Let's Talk</h5>
+                        <p class="cta-text">If you're exploring your next move and want a smooth transition, let's meet for a coffee and chat about how I can help.</p>
+                    </div>
+                </div>
+
+                <style>
+                .bridging-loan.compact {
+                    line-height: 1.4;
+                    padding: 1rem;
+                    font-family: Arial, sans-serif;
+                    color: #333;
+                    max-width: 800px;
+                    margin: 0 auto;
+                }
+
+                .compact .service-title {
+                    font-size: 1.3rem;
+                    color: #2a6496;
+                    margin-bottom: 0.5rem;
+                }
+
+                .compact .service-intro {
+                    margin-bottom: 1rem;
+                }
+
+                .compact .section-heading {
+                    font-size: 1.1rem;
+                    color: #2a6496;
+                    margin: 1rem 0 0.5rem;
+                }
+
+                .compact .benefits-list,
+                .compact .considerations-list {
+                    list-style: none;
+                    padding-left: 0;
+                    margin: 0.8rem 0;
+                }
+
+                .compact .benefit-item,
+                .compact .consideration-item {
+                    margin-bottom: 0.5rem;
+                    padding-left: 1.5rem;
+                    position: relative;
+                }
+
+                .compact .reassurance {
+                    font-style: italic;
+                    margin: 0.8rem 0;
+                }
+
+                .compact .cta-text {
+                    margin-bottom: 0.5rem;
+                }
+                #bridging {
+                    scroll-margin-top: 15vh;
+                }
+                </style>
+                `,
+                image: {
+                    srcLocal: "bridgeLoans",
+                    alt: "hero section image",
+                    width: 300,
+                    height: 300,
+                },
+            }}
+        />
+        <Hero
+            heroType="textImage"
+            client:load
+            content={{
+                switchPlaces: true,
+                title: `<span id="split"> ✂️Split loans</span>`,
+                paragraph: `
+                <div class="service-section split-loans compact">
+                <h5 class="service-title">Split Loans for Separate Buyers</h5>
+                <p class="service-subtitle">Own a property together—keep your finances separate.</p>
+                <p class="service-intro">A split loan (not to be confused with fixed/variable) lets two or more people buy a home together while keeping their loan portions, repayments, and responsibilities separate. Perfect for people in non-traditional arrangements like friends, siblings, or separated couples who want to co-own a property but maintain financial independence.</p>
+                <div class="how-it-works">
+                    <h5 class="section-heading">How It Works</h5>
+                    <p>Each borrower takes out their own individual loan for their share of the property.</p>
+                    <p>You're both on the property title, but each of you has:</p>
+                    <ul class="benefits-list">
+                        <li class="benefit-item">✔️ Your own loan</li>
+                        <li class="benefit-item">✔️ Your own repayment schedule</li>
+                        <li class="benefit-item">✔️ Your own interest rate (can be fixed or variable)</li>
+                        <li class="benefit-item">✔️ Your own responsibility—no joint liability</li>
+                    </ul>
+                </div>
+                <div class="benefits-block">
+                    <h5 class="section-heading">Why People Choose Split Loans</h5>
+                    <ul class="benefits-list">
+                        <li class="benefit-item">✅ Keep your finances independent</li>
+                        <li class="benefit-item">✅ Protect your credit—you're not responsible if the other person misses repayments</li>
+                        <li class="benefit-item">✅ Flexible loan terms—each person can choose what suits them</li>
+                        <li class="benefit-item">✅ Perfect for co-buying with friends, family, or after separation</li>
+                    </ul>
+                </div>
+                <div class="considerations-block">
+                    <h5 class="section-heading">Is This Right for You?</h5>
+                    <ul class="considerations-list">
+                        <li class="consideration-item">Buying a home with someone you're not financially linked to</li>
+                        <li class="consideration-item">Want full control over your own portion of the loan</li>
+                        <li class="consideration-item">Want peace of mind that your credit and repayments are protected</li>
+                    </ul>
+                </div>
+                <div class="cta-block">
+                    <h5 class="section-heading">Let's Make It Easy</h5>
+                    <p class="cta-text">If you're thinking about buying a property with someone else—but want to stay financially independent, this structure might be perfect for you.</p>
+                    <p class="cta-action">Let's talk it through and see if it suits your situation.</p>
+                </div>
+            </div>
+            <style>
+            .split-loans.compact {
+                line-height: 1.4;
+                padding: 1rem;
+                font-family: Arial, sans-serif;
+                color: #333;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
+            .compact .service-title {
+                font-size: 1.3rem;
+                color: #2a6496;
+                margin-bottom: 0.5rem;
+            }
+
+            .compact .service-subtitle {
+                font-weight: bold;
+                margin-bottom: 1rem;
+                color: #555;
+            }
+
+            .compact .service-intro {
+                margin-bottom: 1rem;
+            }
+
+            .compact .section-heading {
+                font-size: 1.1rem;
+                color: #2a6496;
+                margin: 1rem 0 0.5rem;
+            }
+
+            .compact .benefits-list,
+            .compact .considerations-list {
+                list-style: none;
+                padding-left: 0;
+                margin: 0.8rem 0;
+            }
+
+            .compact .benefit-item,
+            .compact .consideration-item {
+                margin-bottom: 0.5rem;
+                padding-left: 1.5rem;
+                position: relative;
+            }
+
+            .compact .consideration-item::before {
+                content: "•";
+                color: #2a6496;
+                font-weight: bold;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+            }
+
+            .compact .cta-text {
+                margin-bottom: 0.5rem;
+            }
+
+            .compact .cta-action {
+                font-weight: bold;
+                color: #2a6496;
+                margin-top: 0.5rem;
+            }
+            #split {
+                scroll-margin-top: 15vh;
+            }
+            </style>
+            `,
+                image: {
+                    srcLocal: "splitLoan",
+                    alt: "hero section image",
+                    width: 300,
+                    height: 300,
+                },
+            }}
+        />
+        <Hero
+            heroType="textImage"
+            client:load
+            content={{
+                title: `<span id="referrals">🛡️ Referrals</span>`,
+                paragraph: `
+                <div class="service-section referral-partners compact">
+                    <h5 class="service-title">🤝 What Else Can I Help You With?</h5>
+                    
+                    <p class="service-intro">To make your journey easier, I can connect you with trusted referral partners for a range of helpful services. While I can introduce you, I'm unable to provide advice on their specific products or assess their suitability for your personal needs. You're welcome to explore these providers or choose others that best fit your situation.</p>
+                    
+                    <div class="partners-block">
+                        <h5 class="section-heading">Services available through my referral partners:</h5>
+                        <ul class="partners-list">
+                            <li class="partner-item">🏠 Tower – Fire & General Insurance</li>
+                            <li class="partner-item">🔒 Initio – Fire & General Insurance</li>
+                            <li class="partner-item">🚗 Asset Finance – For vehicles, equipment, and more</li>
+                            <li class="partner-item">💼 Kōura Wealth – KiwiSaver & Investment advice</li>
+                            <li class="partner-item">💰 UK Pension Transfers – Bringing your pension to NZ</li>
+                            <li class="partner-item">💱 XE Money – International money transfers</li>
+                            <li class="partner-item">⚡ FastConnect – Utility connection services for your move</li>
+                        </ul>
+                    </div>
+                </div>
+
+            <style>
+            .referral-partners.compact {
+                line-height: 1.4;
+                padding: 1rem;
+                font-family: Arial, sans-serif;
+                color: #333;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
+            .compact .service-title {
+                font-size: 1.3rem;
+                color: #2a6496;
+                margin-bottom: 0.8rem;
+            }
+
+            .compact .service-intro {
+                margin-bottom: 1.2rem;
+            }
+
+            .compact .section-heading {
+                font-size: 1.1rem;
+                color: #2a6496;
+                margin: 1rem 0 0.8rem;
+            }
+
+            .compact .partners-list {
+                list-style: none;
+                padding-left: 0;
+                margin: 0.8rem 0;
+            }
+
+            .compact .partner-item {
+                margin-bottom: 0.6rem;
+                padding-left: 1.8rem;
+                position: relative;
+                line-height: 1.5;
+            }
+
+            .compact .partner-item::before {
+                content: "•";
+                color: #2a6496;
+                font-weight: bold;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+                position: absolute;
+                left: 0;
+            }
+            #referrals {
+                scroll-margin-top: 15vh;
+            }
+            </style>
+            `,
+                image: {
+                    srcLocal: "referral",
+                    alt: "hero section image",
+                    width: 300,
+                    height: 300,
+                },
+            }}
+        />
+        <Contact client:load />
+    </main>
+</Layout>

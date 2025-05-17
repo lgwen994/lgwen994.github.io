@@ -1,0 +1,88 @@
+---
+import { ContentSection } from "@modules/ContentSection";
+import Layout from "../layouts/Layout.astro";
+import { FadeIn } from "@utils/animations/FadeIn";
+import { BoxOffers } from "@modules/BoxOffers";
+import { Container } from "@components/Container";
+import { Hero } from "@modules/Hero";
+import { Image } from "@static/images";
+---
+
+<Layout title="Agency Aestro" description="YOUR META DESCRIPTION FOR SEO">
+    <main class="page-content">
+        <ContentSection
+            style={{
+                maxWidth: "600px",
+                margin: "0 auto",
+            }}
+        >
+            <FadeIn client:visible>
+                <h1>About Me</h1>
+                <p></p>
+            </FadeIn>
+        </ContentSection>
+        <Hero
+            heroType="textImage"
+            client:load
+            content={{
+                switchPlaces: true,
+                title: ``,
+                paragraph: `Yuan (Annie) Qian is a registered Mortgage Adviser in Wellington through NZ Financial Services Group Limited, working in Bozinoff Mortgages. FSP Number FSP1009181.
+My passion is helping clients to reach their property and financial freedom by processing and gaining high quality finance approvals and solutions.
+I am fluent in English and Mandarin, and can communicate with customers without any obstacles. `,
+                image: {
+                    srcLocal: "aqImg",
+                    alt: "hero section image",
+                    width: 300,
+                    height: 300,
+                },
+            }}
+        />
+
+        <Hero
+            heroType="textImage"
+            client:load
+            content={{
+                title: `About us more`,
+                paragraph: `lorem ipsum dolores lorem ipsum dolores lorem ipsum dolores lorem ipsum dolores lorem ipsum dolores lorem ipsum dolores `,
+                image: {
+                    src: "https://picsum.photos/630/400?random=3",
+                    alt: "hero section image",
+                    width: 300,
+                    height: 300,
+                },
+            }}
+        />
+        <Container>
+            <FadeIn client:visible>
+                <h2>Check our profiles!</h2>
+            </FadeIn>
+        </Container>
+        <BoxOffers
+            client:load
+            boxes={[
+                {
+                    asLink: true,
+                    href: "https://www.facebook.com",
+                    content: `
+                        <h3>Facebook</h3>
+                    `,
+                },
+                {
+                    asLink: true,
+                    href: "https://www.linkedin.com/c",
+                    content: `
+                        <h3>Linkedin</h3>
+                    `,
+                },
+                {
+                    asLink: true,
+                    href: "https://www.twitter.com",
+                    content: `
+                        <h3>Twitter</h3>
+                    `,
+                },
+            ]}
+        />
+    </main>
+</Layout>

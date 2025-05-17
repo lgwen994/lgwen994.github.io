@@ -1,0 +1,160 @@
+---
+import { Hero } from "@modules/Hero";
+import Layout from "../layouts/Layout.astro";
+import { LogosSlider } from "@modules/LogosSlider";
+import { LeadTexts } from "@modules/LeadTexts";
+import { Image } from "@static/images";
+import { BoxOffers } from "@modules/BoxOffers";
+import { ContentSection } from "@modules/ContentSection";
+import { FadeIn } from "@utils/animations/FadeIn";
+---
+
+<Layout title="Agency Aestro" description="YOUR META DESCRIPTION FOR SEO">
+    <main class="page-content">
+        <Hero
+            heroType="textImage"
+            client:load
+            content={{
+                title: `Guiding You Home with Expert Mortgage Advice`,
+                paragraph: `Whether you're buying your first home, building, upgrading, refinancing, refixing, or expanding your investment portfolio, I can provide the knowledge and advice to guide you through the process.`,
+                buttons: [
+                    {
+                        link: "/contact",
+                        text: "Book a Free Consultation",
+                        variant: "secondary",
+                    },
+                    {
+                        link: "/contact",
+                        text: "contact us",
+                        variant: "primary",
+                    },
+                ],
+                image: {
+                    srcLocal: "aqImg",
+                    alt: "hero section image",
+                    width: 300,
+                    height: 300,
+                },
+            }}
+        />
+        <LogosSlider client:load />
+        <ContentSection
+            style={{
+                maxWidth: "600px",
+                margin: "0 auto",
+            }}
+        >
+            <FadeIn client:visible>
+                <h2>Why choose us?</h2>
+                <p>
+                    lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco
+                </p>
+            </FadeIn>
+        </ContentSection>
+        <BoxOffers
+            client:load
+            boxes={[
+                {
+                    content: `
+                    <h2>+940 clients</h2>
+                    <p>lorem ipsum dolor sit amet, conse dolor sit amet, conse</p>
+                `,
+                },
+                {
+                    content: `
+                    <h2>+1000 projects</h2>
+                    <p>lorem ipsum dolor sit amet, conse dolor sit amet, conse lorem ipsum dolor sit amet, conse dolor sit amet, conse</p>
+                `,
+                },
+                {
+                    content: `
+                    <h2>10 years experience</h2>
+                    <p>lorem ipsum dolor sit amet, conse dolor sit amet, conse</p>
+                `,
+                },
+            ]}
+        />
+        <LeadTexts
+            client:load
+            title="We offer"
+            contentText={[
+                {
+                    content: `
+                <h3>
+                    <a href=/offers#firsthome><b>First Home Buyers</b></a> - lorem ipsum dolor sit ame lorem ipsum dolor sit ame
+                </h3>
+            `,
+                },
+                {
+                    content: `
+                <h3>
+                 <a href=/offers#refinancing><b>Refinancing & Refixing</b></a> - lorem ipsum dolor sit m dolor sitm dolor sit ame lorem ipsum dolor sit ame
+                </h3>
+                `,
+                },
+                {
+                    content: `
+                <h3>
+                    <a href=/offers#construction><b>Construction Loans</b></a> - lorem ipsum dolor sit m dolor sitm dolor
+                </h3>
+                `,
+                },
+                {
+                    content: `
+                <h3>
+                    <a href=/offers#investment><b>Investment Property & Rentals</b></a> - lorem ipsum dolor sit m dolor sitm dolor
+                </h3>
+            `,
+                },
+                {
+                    content: `
+                <h3>
+                    <a href=/offers#bridging><b>Bridging Loans Made Easy</b></a> - lorem ipsum dolor sit m dolor sitm dolor
+                </h3>
+            `,
+                },
+                {
+                    content: `
+                <h3>
+                    <a href=/offers#split><b>Split loans</b></a> - lorem ipsum dolor sit m dolor sitm dolor
+                </h3>
+            `,
+                },
+                {
+                    content: `
+                <h3>
+                    <a href=/offers#referrals><b>Referrals</b></a> - lorem ipsum dolor sit m dolor sitm dolor
+                </h3>
+                `,
+                },
+                
+                 
+            ]}
+        />
+        <Hero
+            heroType="textImage"
+            client:load
+            content={{
+                switchPlaces: true,
+                title: `Our Agency help with lorem`,
+                paragraph: `lorem ipsum dolor sit amet, conse dolor sit amet, conse`,
+                image: {
+                    srcLocal: "heroImg",
+                    alt: "hero section image",
+                    width: 300,
+                    height: 300,
+                },
+            }}
+        />
+        <ContentSection>
+            <FadeIn client:load>
+                <figure>
+                    <Image srcLocal="banks" alt="banks" />
+                </figure>
+            </FadeIn>
+        </ContentSection>
+    </main>
+</Layout>

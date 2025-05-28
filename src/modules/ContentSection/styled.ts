@@ -16,8 +16,11 @@ export const ContentSectionWrapper = styled.div`
     h3,
     h4,
     h5 {
-        margin-bottom: 70px;
+        margin-bottom: 20px;
         font-weight: 200;
+    }
+    p , li{
+        text-align: justify;
     }
 
     figure {

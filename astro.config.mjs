@@ -10,7 +10,12 @@ const date = new Date().toISOString();
 export default defineConfig({
 
     site: 'https://lgwen994.github.io',
-
+    // base: '/',  
+    // trailingSlash: 'always', 
+    // build: {
+    //     format: 'directory',
+    //     assets: '_astro' 
+    // },
     integrations: [
         react(),
         sitemap({
@@ -44,12 +49,9 @@ export default defineConfig({
     prerender: true,
     vite: {
         plugins: [CompressionPlugin()],
+        base: '/'
     },
     buildOptions: {
         minify: true,
     },
-    build: {
-        format: 'directory' 
-    },
-    trailingSlash: 'always'
 });

@@ -9,7 +9,7 @@ import { ContentSection } from "@modules/ContentSection";
 import { FadeIn } from "@utils/animations/FadeIn";
 ---
 
-<Layout title="Agency Aestro" description="YOUR META DESCRIPTION FOR SEO">
+<Layout title="Annie Qian Mortgage" description="Annie Qian Mortgage">
     <main class="page-content">
         <Hero
             heroType="textImage"
@@ -37,7 +37,7 @@ import { FadeIn } from "@utils/animations/FadeIn";
                 },
             }}
         />
-        <LogosSlider client:load />
+        <!-- <LogosSlider client:load /> -->
         <ContentSection
             style={{
                 maxWidth: "600px",
@@ -46,15 +46,12 @@ import { FadeIn } from "@utils/animations/FadeIn";
         >
             <FadeIn client:visible>
                 <h2>Why choose us?</h2>
-                <p>
-                    lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco
-                </p>
+                <figure>
+                    <Image srcLocal="banks" alt="banks" />
+                </figure>
             </FadeIn>
         </ContentSection>
-        <BoxOffers
+        <!-- <BoxOffers
             client:load
             boxes={[
                 {
@@ -76,62 +73,60 @@ import { FadeIn } from "@utils/animations/FadeIn";
                 `,
                 },
             ]}
-        />
+        /> -->
         <LeadTexts
             client:load
-            title="We offer"
+            title="Our services"
             contentText={[
                 {
                     content: `
                 <h3>
-                    <a href=/offers#firsthome><b>First Home Buyers</b></a> - lorem ipsum dolor sit ame lorem ipsum dolor sit ame
+                    <a href=/services#firsthome><b>First Home Buyers</b> - Buying your first home? Let me make it easy for you.</a>
                 </h3>
             `,
                 },
                 {
                     content: `
                 <h3>
-                 <a href=/offers#refinancing><b>Refinancing & Refixing</b></a> - lorem ipsum dolor sit m dolor sitm dolor sit ame lorem ipsum dolor sit ame
+                 <a href=/services#refinancing><b>Refinancing & Refixing</b> - Refinancing doesn't have to be hard — I'll make it easy.</a>
                 </h3>
                 `,
                 },
                 {
                     content: `
                 <h3>
-                    <a href=/offers#construction><b>Construction Loans</b></a> - lorem ipsum dolor sit m dolor sitm dolor
+                    <a href=/services#construction><b>Construction Loans</b> - Building Your Dream Home? I Can Help!</a>
                 </h3>
                 `,
                 },
                 {
                     content: `
                 <h3>
-                    <a href=/offers#investment><b>Investment Property & Rentals</b></a> - lorem ipsum dolor sit m dolor sitm dolor
+                    <a href=/services#investment><b>Investment Property & Rentals</b> - Looking to buy a rental or investment property? I can help.</a>
                 </h3>
             `,
                 },
                 {
                     content: `
                 <h3>
-                    <a href=/offers#bridging><b>Bridging Loans Made Easy</b></a> - lorem ipsum dolor sit m dolor sitm dolor
+                    <a href=/services#bridging><b>Bridging Loans Made Easy</b> - It can help you secure your next home before your current one is sold.</a>
                 </h3>
             `,
                 },
                 {
                     content: `
                 <h3>
-                    <a href=/offers#split><b>Split loans</b></a> - lorem ipsum dolor sit m dolor sitm dolor
+                    <a href=/services#split><b>Split loans</b> - Own a property together, keep your finances separate.</a>
                 </h3>
             `,
                 },
                 {
                     content: `
                 <h3>
-                    <a href=/offers#referrals><b>Referrals</b></a> - lorem ipsum dolor sit m dolor sitm dolor
+                    <a href=/services#referrals><b>Referrals</b> - I can connect you with trusted referral partners for a range of helpful services.</a>
                 </h3>
                 `,
                 },
-                
-                 
             ]}
         />
         <Hero
@@ -139,8 +134,8 @@ import { FadeIn } from "@utils/animations/FadeIn";
             client:load
             content={{
                 switchPlaces: true,
-                title: `Our Agency help with lorem`,
-                paragraph: `lorem ipsum dolor sit amet, conse dolor sit amet, conse`,
+                title: `<a href=/policy>Privacy Policy & Publicly Available Disclosure</a>`,
+                paragraph: `Here is some general information about our business to help you decide whether to seek our advice.`,
                 image: {
                     srcLocal: "heroImg",
                     alt: "hero section image",
@@ -149,12 +144,5 @@ import { FadeIn } from "@utils/animations/FadeIn";
                 },
             }}
         />
-        <ContentSection>
-            <FadeIn client:load>
-                <figure>
-                    <Image srcLocal="banks" alt="banks" />
-                </figure>
-            </FadeIn>
-        </ContentSection>
     </main>
 </Layout>

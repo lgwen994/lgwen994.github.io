@@ -3,6 +3,7 @@ import { type FC } from "react";
 import IconFacebook from "./icon-facebook.svg";
 import IconInstagram from "./icon-instagram.svg";
 import IconTwitter from "./icon-twitter.svg";
+import IconXiaohongshu from "./icon-xiaohongshu.svg";
 import IconLinkedIn from "./icon-linkedin.svg";
 import IconArrowDown from "./icon-arrow-down.svg";
 import IconArrowCircle from "./icon-arrow-circle.svg";
@@ -17,6 +18,7 @@ export const icons = {
     instagram: IconInstagram,
     twitter: IconTwitter,
     linkedin: IconLinkedIn,
+    xiaohongshu: IconXiaohongshu,
     astro: IconAstro,
     splitLoan: IconSplitLoan,
     bozinoff: IconBozinoff
@@ -49,4 +51,4 @@ export const Icon: FC<IconName> = ({ alt, iconData, ...rest }) => {
     );
 };
 
-export { IconAstro, IconSplitLoan, IconFacebook, IconInstagram, IconTwitter, IconLinkedIn, IconBozinoff };
+export { IconAstro, IconSplitLoan, IconFacebook, IconInstagram, IconXiaohongshu, IconTwitter, IconLinkedIn, IconBozinoff };

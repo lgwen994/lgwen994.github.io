@@ -28,6 +28,9 @@ export const Contact: FC = () => {
         email: z.string().email({
             message: "Please enter a valid email",
         }),
+        phone: z.string().min(6, {
+            message: "Please enter a valid phone",
+        }),
         message: z.string().min(10, {
             message: "Message should be at least 10 characters",
         }),
@@ -41,6 +44,7 @@ export const Contact: FC = () => {
         defaultValues: {
             name: "",
             email: "",
+            phone: "",
             message: "",
         },
     });
@@ -65,6 +69,7 @@ export const Contact: FC = () => {
                 template_params: {
                     name: values.name,
                     email: values.email,
+                    phone: values.phone,
                     message: values.message,
                 },
             })
@@ -86,9 +91,7 @@ export const Contact: FC = () => {
                                 <b>Let's talk!</b>
                             </h2>
                             <p>
-                                change API links to your own service to make it
-                                work (whole script is setup correctly just
-                                change API links)
+
                             </p>
                             <Input
                                 type="text"
@@ -109,9 +112,9 @@ export const Contact: FC = () => {
                             <Input
                                 type="text"
                                 placeholder="Mobile Number *"
-                                register={contactForm.register("email")}
+                                register={contactForm.register("phone")}
                                 error={
-                                    contactForm.formState.errors.email?.message
+                                    contactForm.formState.errors.phone?.message
                                 }
                             />
                             <Input
@@ -119,8 +122,7 @@ export const Contact: FC = () => {
                                 placeholder="Message *"
                                 register={contactForm.register("message")}
                                 error={
-                                    contactForm.formState.errors.message
-                                        ?.message
+                                    contactForm.formState.errors.message?.message
                                 }
                             />
                             <Button

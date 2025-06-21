@@ -24,10 +24,11 @@ export const Navigation: FC = () => {
 
     const navItems = [
         { path: "/", label: "Home" },
-        { path: "/about", label: "About Me" },
-        { path: "/services", label: "Services" },
-        { path: "/policy", label: "Policy" },
-        { path: "/contact", label: "Contact" },
+        { path: "/about/", label: "About Me" },
+        { path: "/services/", label: "Services" },
+        { path: "/policy/", label: "Privacy Policy" },
+        { path: "/disclosure/", label: "Disclosure" },
+        { path: "/contact/", label: "Contact" },
     ];
 
     return (

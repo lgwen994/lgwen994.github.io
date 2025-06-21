@@ -9,7 +9,7 @@ export const CenterTextStyled = styled.div`
     justify-content: center;
     flex-direction: column;
 
-    max-width: 650px;
+    max-width: 680px;
     margin: 0 auto;
     position: relative;
 

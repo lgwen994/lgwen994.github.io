@@ -9,13 +9,13 @@ const date = new Date().toISOString();
 // https://astro.build/config
 export default defineConfig({
 
-    site: 'https://lgwen994.github.io',
-    // base: '/',  
-    // trailingSlash: 'always', 
-    // build: {
-    //     format: 'directory',
-    //     assets: '_astro' 
-    // },
+    site: 'https://d1a5wv20r2ace.cloudfront.net',
+    base: '/',  
+    trailingSlash: 'always', 
+    build: {
+        format: 'directory',
+        assets: '_astro' 
+    },
     integrations: [
         react(),
         sitemap({

@@ -120,3 +120,6 @@ have any problems or questions, please let us know here: [Contact Form](https://
 ## 🧞 Authors
 
 -   [@codexcode](https://www.codexcode.pl)
+-   
+aws s3 sync dist/ s3://bozinoff-mortgages-test --acl public-read
+

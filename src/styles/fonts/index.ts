@@ -15,7 +15,7 @@ import {
 } from "@static/fonts";
 
 export enum Fonts {
-    primary = `"Roboto", sans-serif`,
+    primary = `verdana,"Roboto", sans-serif`,
 }
 
 export const FontFace = css`

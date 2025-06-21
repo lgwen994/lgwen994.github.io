@@ -1,20 +1,27 @@
 ---
 import { Hero } from "@modules/Hero";
 import Layout from "../layouts/Layout.astro";
+import { BoxOffers } from "@modules/BoxOffers";
 import { Contact as ContactModule } from "@modules/Contact";
+import { Map as MapModule } from "@modules/Map";
 import { FadeIn } from "@utils/animations/FadeIn";
+import { SocialMediaLinks } from "@modules/SocialMediaLinks";
+import { ContactInfoGrid } from "@modules/ContactInfoGrid";
 ---
 
-<Layout
-    title="Annie Qian Mortgage | Contact"
-    description="Annie Qian Mortgage"
->
+<Layout title="Annie Qian Mortgage | Contact" description="Annie Qian Mortgage">
     <main class="page-content">
         <Hero heroType="center" client:load>
             <FadeIn delay={0.2} client:load>
-                <h1>Contact us</h1>
+                <h1>Get in Touch</h1>
+                <h5>
+                    Leave a message today! I will answer it as soon as possible.
+                </h5>
             </FadeIn>
         </Hero>
+        <ContactInfoGrid client:load />
         <ContactModule client:load />
+        <SocialMediaLinks client:load />
+        <MapModule client:load />
     </main>
 </Layout>

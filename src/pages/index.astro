@@ -1,148 +1,131 @@
 ---
 import { Hero } from "@modules/Hero";
 import Layout from "../layouts/Layout.astro";
-import { LogosSlider } from "@modules/LogosSlider";
+import { Map as MapModule } from "@modules/Map";
 import { LeadTexts } from "@modules/LeadTexts";
 import { Image } from "@static/images";
-import { BoxOffers } from "@modules/BoxOffers";
+import { SocialMediaLinks } from "@modules/SocialMediaLinks";
+
 import { ContentSection } from "@modules/ContentSection";
 import { FadeIn } from "@utils/animations/FadeIn";
 ---
 
 <Layout title="Annie Qian Mortgage" description="Annie Qian Mortgage">
-    <main class="page-content">
-        <Hero
-            heroType="textImage"
-            client:load
-            content={{
-                title: `Guiding You Home with Expert Mortgage Advice`,
-                paragraph: `Whether you're buying your first home, building, upgrading, refinancing, refixing, or expanding your investment portfolio, I can provide the knowledge and advice to guide you through the process.`,
-                buttons: [
-                    {
-                        link: "/contact",
-                        text: "Book a Free Consultation",
-                        variant: "secondary",
-                    },
-                    {
-                        link: "/contact",
-                        text: "contact us",
-                        variant: "primary",
-                    },
-                ],
-                image: {
-                    srcLocal: "aqImg",
-                    alt: "hero section image",
-                    width: 300,
-                    height: 300,
-                },
-            }}
-        />
-        <!-- <LogosSlider client:load /> -->
-        <ContentSection
-            style={{
-                maxWidth: "600px",
-                margin: "0 auto",
-            }}
-        >
-            <FadeIn client:visible>
-                <h2>Why choose us?</h2>
-                <figure>
-                    <Image srcLocal="banks" alt="banks" />
-                </figure>
-            </FadeIn>
-        </ContentSection>
-        <!-- <BoxOffers
-            client:load
-            boxes={[
+    <script is:inline>
+        if (location.hostname === "aqmortgages.co.nz") {
+            location.href =
+                "https://www.aqmortgages.co.nz" +
+                location.pathname +
+                location.search +
+                location.hash;
+        }
+    </script>
+    <Hero
+        heroType="textImage"
+        client:load
+        content={{
+            title: `Guiding You Home with Expert Mortgage Advice`,
+            paragraph: `Whether you're buying your first home, building, upgrading, refinancing, refixing, or expanding your investment portfolio, I can provide the knowledge and advice to guide you through the process.`,
+            buttons: [
                 {
-                    content: `
-                    <h2>+940 clients</h2>
-                    <p>lorem ipsum dolor sit amet, conse dolor sit amet, conse</p>
-                `,
+                    link: "/contact/",
+                    text: "Learn More",
+                    variant: "secondary",
                 },
-                {
-                    content: `
-                    <h2>+1000 projects</h2>
-                    <p>lorem ipsum dolor sit amet, conse dolor sit amet, conse lorem ipsum dolor sit amet, conse dolor sit amet, conse</p>
-                `,
-                },
-                {
-                    content: `
-                    <h2>10 years experience</h2>
-                    <p>lorem ipsum dolor sit amet, conse dolor sit amet, conse</p>
-                `,
-                },
-            ]}
-        /> -->
-        <LeadTexts
-            client:load
-            title="Our services"
-            contentText={[
-                {
-                    content: `
+            ],
+            image: {
+                srcLocal: "aqImg",
+                alt: "hero section image",
+                width: 300,
+                height: 300,
+            },
+        }}
+    />
+    <!-- <LogosSlider client:load /> -->
+    <ContentSection
+        style={{
+            maxWidth: "600px",
+            margin: "0 auto",
+        }}
+    >
+        <FadeIn client:visible>
+            <!-- <h2>Why choose us?</h2> -->
+            <figure>
+                <Image srcLocal="banks" alt="banks" />
+            </figure>
+        </FadeIn>
+    </ContentSection>
+
+    <LeadTexts
+        client:load
+        title="Services"
+        contentText={[
+            {
+                content: `
                 <h3>
                     <a href=/services#firsthome><b>First Home Buyers</b> - Buying your first home? Let me make it easy for you.</a>
                 </h3>
             `,
-                },
-                {
-                    content: `
+            },
+            {
+                content: `
                 <h3>
                  <a href=/services#refinancing><b>Refinancing & Refixing</b> - Refinancing doesn't have to be hard — I'll make it easy.</a>
                 </h3>
                 `,
-                },
-                {
-                    content: `
+            },
+            {
+                content: `
                 <h3>
                     <a href=/services#construction><b>Construction Loans</b> - Building Your Dream Home? I Can Help!</a>
                 </h3>
                 `,
-                },
-                {
-                    content: `
+            },
+            {
+                content: `
                 <h3>
                     <a href=/services#investment><b>Investment Property & Rentals</b> - Looking to buy a rental or investment property? I can help.</a>
                 </h3>
             `,
-                },
-                {
-                    content: `
+            },
+            {
+                content: `
                 <h3>
-                    <a href=/services#bridging><b>Bridging Loans Made Easy</b> - It can help you secure your next home before your current one is sold.</a>
+                    <a href=/services#bridging><b>Bridging Loans</b> - It can help you secure your next home before your current one is sold.</a>
                 </h3>
             `,
-                },
-                {
-                    content: `
+            },
+            {
+                content: `
                 <h3>
                     <a href=/services#split><b>Split loans</b> - Own a property together, keep your finances separate.</a>
                 </h3>
             `,
-                },
-                {
-                    content: `
+            },
+            {
+                content: `
                 <h3>
                     <a href=/services#referrals><b>Referrals</b> - I can connect you with trusted referral partners for a range of helpful services.</a>
                 </h3>
                 `,
-                },
-            ]}
-        />
-        <Hero
-            heroType="textImage"
-            client:load
-            content={{
-                switchPlaces: true,
-                title: `<a href=/policy>Privacy Policy & Publicly Available Disclosure</a>`,
-                paragraph: `Here is some general information about our business to help you decide whether to seek our advice.`,
-                image: {
-                    srcLocal: "heroImg",
-                    alt: "hero section image",
-                    width: 300,
-                    height: 300,
-                },
-            }}
-        />
-    </main>
+            },
+        ]}
+    />
+    <Hero
+        heroType="textImage"
+        client:load
+        content={{
+            switchPlaces: true,
+            title: `<a href=/policy>Privacy Policy & Publicly Available Disclosure</a>`,
+            paragraph: ``,
+            image: {
+                srcLocal: "heroImg",
+                alt: "hero section image",
+                width: 300,
+                height: 300,
+            },
+        }}
+    />
+    <SocialMediaLinks client:load />
+    <MapModule client:load />
 </Layout>

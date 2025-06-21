@@ -1,28 +1,41 @@
+
 import { type FC } from "react";
 
 import IconFacebook from "./icon-facebook.svg";
+import IconFacebookC from "./icon-facebook-color.svg";
 import IconInstagram from "./icon-instagram.svg";
 import IconTwitter from "./icon-twitter.svg";
 import IconXiaohongshu from "./icon-xiaohongshu.svg";
+import IconXiaohongshuEn from "./icon-xiaohongshu-en.svg";
 import IconLinkedIn from "./icon-linkedin.svg";
+import IconLinkedInC from "./icon-linkedin-color.svg";
 import IconArrowDown from "./icon-arrow-down.svg";
 import IconArrowCircle from "./icon-arrow-circle.svg";
 
 import IconAstro from "./icon-astro.svg";
 import IconSplitLoan from "./icon-split-loan.svg";
 import IconBozinoff from "./icon-bozinoff.svg";
+import IconPhone from "./icon-phone.svg";
+import IconEmail from "./icon-email.svg";
+import IconDocument from "./icon-document.svg";
+
 export const icons = {
     arrowDown: IconArrowDown,
     arrowCircle: IconArrowCircle,
+    facebookC: IconFacebookC,
     facebook: IconFacebook,
     instagram: IconInstagram,
     twitter: IconTwitter,
     linkedin: IconLinkedIn,
+    linkedinC: IconLinkedInC,
     xiaohongshu: IconXiaohongshu,
+    xiaohongshuEn: IconXiaohongshuEn,
     astro: IconAstro,
     splitLoan: IconSplitLoan,
-    bozinoff: IconBozinoff
-
+    bozinoff: IconBozinoff,
+    phone: IconPhone,
+    email: IconEmail,
+    document: IconDocument
 };
 
 type IconName = {

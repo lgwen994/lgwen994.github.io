@@ -63,9 +63,9 @@ export const Contact: FC = () => {
     const formSubmit = contactForm.handleSubmit(async (values) => {
         axios
             .post("https://api.emailjs.com/api/v1.0/email/send", {
-                service_id: "service_YOUR_ID",
-                template_id: "template_YOur_ID",
-                user_id: "your_user_id",
+                service_id: "service_0vfs7yn",
+                template_id: "template_ehs6aar",
+                user_id: "N49U3AMwyOpTkUlEh",
                 template_params: {
                     name: values.name,
                     email: values.email,
@@ -87,8 +87,7 @@ export const Contact: FC = () => {
                     <FadeIn>
                         <FormStyled onSubmit={formSubmit}>
                             <h2>
-                                Please complete the form below.{" "}
-                                <b>Let's talk!</b>
+                                {/* Leave a message today! I will answer it as soon as possible. */}
                             </h2>
                             <p>
 
@@ -102,14 +101,6 @@ export const Contact: FC = () => {
                                 }
                             />
                             <Input
-                                type="email"
-                                placeholder="Email *"
-                                register={contactForm.register("email")}
-                                error={
-                                    contactForm.formState.errors.email?.message
-                                }
-                            />
-                            <Input
                                 type="text"
                                 placeholder="Mobile Number *"
                                 register={contactForm.register("phone")}
@@ -118,8 +109,16 @@ export const Contact: FC = () => {
                                 }
                             />
                             <Input
+                                type="email"
+                                placeholder="Your Email *"
+                                register={contactForm.register("email")}
+                                error={
+                                    contactForm.formState.errors.email?.message
+                                }
+                            />
+                            <Input
                                 type="textarea"
-                                placeholder="Message *"
+                                placeholder="Please leave your message *"
                                 register={contactForm.register("message")}
                                 error={
                                     contactForm.formState.errors.message?.message
@@ -146,21 +145,16 @@ export const Contact: FC = () => {
                         <TextBox
                             bgText="Email"
                             boxAsLink={true}
-                            href="mailto:youremgail@gmail.com"
+                            href="mailto:annie@bml.net.nz"
                             target="_blank"
                             children={`
                             <h3>Click to send email</h3>
                             <p>
-                                Feel free to send us an email if you have any
+                                Feel free to send me an email if you have any
                                 questions
                             </p>
                             `}
                         />
-                    </FadeIn>
-                </S.ContactBox>
-                <S.ContactBox>
-                    <FadeIn delay={0.2}>
-                        <LocationMap />
                     </FadeIn>
                 </S.ContactBox>
             </S.ContainerStyled>

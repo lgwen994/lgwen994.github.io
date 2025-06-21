@@ -1,6 +1,6 @@
 import React, { type FC } from "react";
 import * as S from "./styled";
-import { Icon } from "@static/icons";
+import { Icon, icons } from "@static/icons";
 
 type TextBoxLinkProps = {
     href?: string;
@@ -12,6 +12,8 @@ export type TextBoxProps = {
     variant?: "normal" | "background-text";
     bgText?: string;
     boxAsLink?: boolean;
+    iconName?: keyof typeof icons;
+    iconAlt?: string;
 } & TextBoxLinkProps;
 
 export const TextBox: FC<TextBoxProps> = ({
@@ -19,13 +21,12 @@ export const TextBox: FC<TextBoxProps> = ({
     variant,
     bgText,
     boxAsLink,
+    iconName = "arrowCircle",
+    iconAlt = "arrow",
     ...rest
 }) => {
     if (!children) return null;
 
-    /**
-     * box can appear as a link if needed
-     */
     const TextBoxComponent = boxAsLink ? S.TextBoxLinkStyled : S.TextBotStyed;
 
     return (
@@ -33,14 +34,15 @@ export const TextBox: FC<TextBoxProps> = ({
             {variant === "background-text" && bgText && (
                 <S.TextBotBgText>{bgText}</S.TextBotBgText>
             )}
+            {boxAsLink && (
+                <S.LinkIconFigure>
+                    <S.LinkIcon iconData={iconName} alt={iconAlt} />
+                </S.LinkIconFigure>
+            )}
             <S.TextBotTextWrapper
                 dangerouslySetInnerHTML={{ __html: children }}
             />
-            {boxAsLink && (
-                <S.LinkIconFigure>
-                    <S.LinkIcon iconData="arrowCircle" alt="arrow" />
-                </S.LinkIconFigure>
-            )}
+
         </TextBoxComponent>
     );
 };

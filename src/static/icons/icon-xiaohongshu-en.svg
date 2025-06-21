@@ -1,0 +1,4 @@
+<svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+<rect width="50" height="50" rx="15%" fill="red"/>
+<text x="50%" y="50%" dy="0.2em" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">RED</text>
+</svg>

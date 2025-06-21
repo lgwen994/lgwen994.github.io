@@ -2,10 +2,8 @@
 import { ContentSection } from "@modules/ContentSection";
 import Layout from "../layouts/Layout.astro";
 import { FadeIn } from "@utils/animations/FadeIn";
-import { BoxOffers } from "@modules/BoxOffers";
-import { Container } from "@components/Container";
 import { Hero } from "@modules/Hero";
-import { Image } from "@static/images";
+import { SocialMediaLinks } from "@modules/SocialMediaLinks";
 ---
 
 <Layout title="Annie Qian Mortgage | About" description="Annie Qian Mortgage">
@@ -38,37 +36,6 @@ I am fluent in English and Mandarin, and can communicate with customers without 
                 },
             }}
         />
-
-        <Container>
-            <FadeIn client:visible>
-                <h2>Check our profiles!</h2>
-            </FadeIn>
-        </Container>
-        <BoxOffers
-            client:load
-            boxes={[
-                {
-                    asLink: true,
-                    href: "https://www.facebook.com/share/18WdPVtM99/?mibextid=qi2Omg",
-                    content: `
-                        <h3>Facebook</h3>
-                    `,
-                },
-                {
-                    asLink: true,
-                    href: "https://www.linkedin.com/in/annie-qian-21353635b/",
-                    content: `
-                        <h3>Linkedin</h3>
-                    `,
-                },
-                {
-                    asLink: true,
-                    href: "https://www.xiaohongshu.com/user/profile/5ad0abd64eacab0f494b71e3?xsec_token=YB_HYwzrPyFTnR_AIYa-azqzB3z2ucVrXJerD1i1qv-I0%3D&xsec_source=app_share&xhsshare=CopyLink&appuid=5ad0abd64eacab0f494b71e3&apptime=1748313279&share_id=3ee5e0fe228b46f9abbef0a1d404c807&share_channel=copy_link",
-                    content: `
-                        <h3>rednote 小红书</h3>
-                    `,
-                },
-            ]}
-        />
+        <SocialMediaLinks client:load />
     </main>
 </Layout>

@@ -61,4 +61,7 @@ export const ContentSectionWrapper = styled.div`
             margin: 0 auto;
         }
     }
+        .heading {
+        margin-bottom: 20px;
+        }
 `;

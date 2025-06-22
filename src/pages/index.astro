@@ -55,62 +55,158 @@ import { FadeIn } from "@utils/animations/FadeIn";
             </figure>
         </FadeIn>
     </ContentSection>
-
-    <LeadTexts
+    <ContentSection
+        style={{
+            maxWidth: "1200px",
+            margin: "0 auto",
+        }}
+    >
+        <FadeIn client:visible>
+            <h2>Services</h2>
+        </FadeIn>
+    </ContentSection>
+    <Hero
+        heroType="textImage"
         client:load
-        title="Services"
-        contentText={[
-            {
-                content: `
-                <h3>
-                    <a href=/services#firsthome><b>First Home Buyers</b> - Buying your first home? Let me make it easy for you.</a>
-                </h3>
-            `,
+        content={{
+            title: ``,
+            paragraph: `
+            <a href="/services/#firsthome">
+                <h4>
+                    <b>First Home Buyers</b> - Buying your first home? Let me make it easy for you.
+                </h4>
+            </a>`,
+            image: {
+                srcLocal: "firstHomeBuyer",
+                alt: "hero section image",
+                width: 50,
+                height: 50,
             },
-            {
-                content: `
-                <h3>
-                 <a href=/services#refinancing><b>Refinancing & Refixing</b> - Refinancing doesn't have to be hard — I'll make it easy.</a>
-                </h3>
-                `,
-            },
-            {
-                content: `
-                <h3>
-                    <a href=/services#construction><b>Construction Loans</b> - Building Your Dream Home? I Can Help!</a>
-                </h3>
-                `,
-            },
-            {
-                content: `
-                <h3>
-                    <a href=/services#investment><b>Investment Property & Rentals</b> - Looking to buy a rental or investment property? I can help.</a>
-                </h3>
-            `,
-            },
-            {
-                content: `
-                <h3>
-                    <a href=/services#bridging><b>Bridging Loans</b> - It can help you secure your next home before your current one is sold.</a>
-                </h3>
-            `,
-            },
-            {
-                content: `
-                <h3>
-                    <a href=/services#split><b>Split loans</b> - Own a property together, keep your finances separate.</a>
-                </h3>
-            `,
-            },
-            {
-                content: `
-                <h3>
-                    <a href=/services#referrals><b>Referrals</b> - I can connect you with trusted referral partners for a range of helpful services.</a>
-                </h3>
-                `,
-            },
-        ]}
+        }}
     />
+    <Hero
+        heroType="textImage"
+        client:load
+        content={{
+            switchPlaces: true,
+            title: ``,
+            paragraph: `
+            <a href="/services/#refinancing">
+                <h4>
+                    <b>Refinancing & Refixing</b> - Refinancing doesn't have to be
+                    hard — I'll make it easy.
+                </h4>
+            </a>`,
+            image: {
+                srcLocal: "refinance",
+                alt: "refinance",
+                width: 50,
+                height: 50,
+            },
+        }}
+    />
+    <Hero
+        heroType="textImage"
+        client:load
+        content={{
+            title: ``,
+            paragraph: `
+            <a href="/services/#construction">
+                <h4>
+                    <b>Construction Loans</b> - Building Your Dream Home? I Can Help!
+                </h4>
+            </a>`,
+            image: {
+                srcLocal: "constructionLoan",
+                alt: "constructionLoan",
+                width: 50,
+                height: 50,
+            },
+        }}
+    />
+    <Hero
+        heroType="textImage"
+        client:load
+        content={{
+            title: ``,
+            switchPlaces: true,
+            paragraph: `
+            <a href="/services/#investment">
+                <h4>
+                    <b>Investment Property & Rentals</b> - Looking to buy a rental
+                    or investment property? I can help.
+                </h4>
+            </a>`,
+            image: {
+                srcLocal: "investment",
+                alt: "investment",
+                width: 50,
+                height: 50,
+            },
+        }}
+    />
+    <Hero
+        heroType="textImage"
+        client:load
+        content={{
+            title: ``,
+            paragraph: `
+            <a href="/services/#bridging">
+                <h4>
+                    <b>Bridging Loans</b> - It can help you secure your next home
+                    before your current one is sold.
+                </h4>
+            </a>`,
+            image: {
+                srcLocal: "bridgeLoans",
+                alt: "bridgeLoans",
+                width: 50,
+                height: 50,
+            },
+        }}
+    />
+    <Hero
+        heroType="textImage"
+        client:load
+        content={{
+            title: ``,
+            switchPlaces: true,
+            paragraph: `
+            <a href="/services/#split">
+                <h4>
+                    <b>Split loans</b> - Own a property together, keep your finances
+                    separate.
+                </h4>
+            </a>`,
+            image: {
+                srcLocal: "splitLoan",
+                alt: "splitLoan",
+                width: 50,
+                height: 50,
+            },
+        }}
+    />
+    <Hero
+        heroType="textImage"
+        client:load
+        content={{
+            title: ``,
+            paragraph: `
+            <a href="/services/#referrals">
+                <h4>
+                    <b>Referrals</b> - I can connect you with trusted referral partners
+                    for a range of helpful services.
+                </h4>
+            </a>`,
+            image: {
+                srcLocal: "referral",
+                alt: "referral",
+                width: 50,
+                height: 50,
+            },
+        }}
+    />
+
     <Hero
         heroType="textImage"
         client:load
